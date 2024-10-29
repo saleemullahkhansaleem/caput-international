@@ -19,30 +19,54 @@ const navigation = [
   },
   {
     name: "What We Do",
-    href: "#",
+    href: "/services", // Updated href for "What We Do"
     subItems: [
       {
         name: "Event Management",
-        href: "#",
+        href: "/services/event-management", // Updated href for "Event Management"
         subItems: [
-          { name: "International Symposiums", href: "#" },
-          { name: "International Conferences", href: "#" },
-          { name: "International Seminars", href: "#" },
-          { name: "Launching Ceremony", href: "#" },
-          { name: "Trainings/Workshops", href: "#" },
+          {
+            name: "International Symposiums",
+            href: "/services/event-management#symposiums",
+          },
+          {
+            name: "International Conferences",
+            href: "/services/event-management#conferences",
+          },
+          {
+            name: "International Seminars",
+            href: "/services/event-management#seminars",
+          },
+          {
+            name: "Launching Ceremony",
+            href: "/services/event-management#launching-ceremony",
+          },
+          {
+            name: "Trainings/Workshops",
+            href: "/services/event-management#trainings-workshops",
+          },
         ],
       },
-      { name: "Vendor Services", href: "#" },
-      { name: "Presence in Oil & Gas Sector", href: "#" },
-      { name: "Branding & Advertising", href: "#" },
-      { name: "Facility Management Services", href: "#" },
-      { name: "Construction", href: "#" },
-      { name: "Property Advisors", href: "#" },
-      { name: "Mines & Minerals", href: "#" },
+      { name: "Vendor Services", href: "/services/vendor-services" },
+      {
+        name: "Presence in Oil & Gas Sector",
+        href: "/services/presence-in-oil-and-gas-sector",
+      },
+      {
+        name: "Branding & Advertising",
+        href: "/services/branding-and-advertising",
+      },
+      {
+        name: "Facility Management Services",
+        href: "/services/facility-management-services",
+      },
+      { name: "Construction", href: "/services/construction" },
+      { name: "Property Advisors", href: "/services/property-advisors" },
+      { name: "Mines & Minerals", href: "/services/mines-and-minerals" },
     ],
   },
-  { name: "Gallery", href: "#" },
-  { name: "Contact Us", href: "#" },
+  { name: "Gallery", href: "/gallery" }, // Updated href for "Gallery"
+  { name: "Contact Us", href: "/contact" }, // Updated href for "Contact Us"
 ];
 
 export default function Navbar() {
