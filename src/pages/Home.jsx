@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
-import { LogoCarousel } from "@/components";
+import { LogoCarousel, VideoSection } from "@/components";
 import { Link } from "react-router-dom";
 
 export const services = [
@@ -84,31 +84,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Hero Section */}
-      <section className="relative h-[calc(100vh-72px)] overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source
-            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="text-center text-white">
-            <h1 className="text-5xl font-bold mb-4">Welcome to Our Company</h1>
-            <p className="text-xl mb-8">
-              Innovative Solutions for a Better Future
-            </p>
-            <Button size="lg">Learn More</Button>
-          </div>
-        </div>
-      </section>
+      <VideoSection />
 
       {/* Services Section */}
       <section className="py-20 bg-muted">
