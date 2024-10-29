@@ -2,52 +2,61 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 import { LogoCarousel } from "@/components";
+import { Link } from "react-router-dom";
 
 export const services = [
   {
     title: "Event Management",
     image: "/services/service1.webp",
+    path: "/",
     description:
       "Provides out-of-the-box solutions, focusing on uniqueness for every client and event.",
   },
   {
     title: "Vendor Services",
     image: "/services/service2.webp",
+    path: "/",
     description:
       "Offers quality and affordable delivery through direct sourcing and special relationships.",
   },
   {
     title: "Presence in Oil & Gas Sector",
     image: "/services/service3.webp",
+    path: "/",
     description:
       "Strategic operations and consulting in the oil and gas industry.",
   },
   {
     title: "Branding & Advertising",
     image: "/services/service4.webp",
+    path: "/",
     description:
       "Aims for client growth through strategy, consulting, development, and management.",
   },
   {
     title: "Facility Management Services",
     image: "/services/service5.webp",
+    path: "/",
     description:
       "Delivers quality service with trained staff for organizational image building.",
   },
   {
     title: "Construction",
     image: "/services/service6.webp",
+    path: "/",
     description: "Professional construction services for diverse projects.",
   },
   {
     title: "Property Advisors",
     image: "/services/service7.webp",
+    path: "/",
     description:
       "Provides real estate services, including transactions, advisory, and investment options.",
   },
   {
     title: "Mines & Minerals",
     image: "/services/service8.webp",
+    path: "/",
     description: "Expert consulting and management in the mining sector.",
   },
 ];
@@ -112,8 +121,8 @@ export default function Home() {
                   src={service.image}
                   alt={service.title}
                   width={300}
-                  height={200}
-                  className="w-full h-48 object-cover"
+                  height={300}
+                  className="w-full h-60 object-cover"
                 />
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
@@ -122,8 +131,10 @@ export default function Home() {
                   <p className="text-muted-foreground mb-4">
                     {service.description}
                   </p>
-                  <Button variant="outline">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                  <Button variant="outline" asChild>
+                    <Link to={service.path}>
+                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>

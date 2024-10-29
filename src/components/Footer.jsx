@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-muted pt-12">
+    <footer className="bg-muted pt-12 dark text-foreground">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -27,7 +27,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/about"
                   className="text-muted-foreground hover:text-foreground"
                 >
                   About
@@ -57,7 +57,7 @@ export default function Footer() {
               {services.map((service, index) => (
                 <li key={index}>
                   <Link
-                    to="#"
+                    to={service.path}
                     className="text-muted-foreground hover:text-foreground"
                   >
                     {service.title}
