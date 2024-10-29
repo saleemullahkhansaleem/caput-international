@@ -38,7 +38,7 @@ export default function Footer() {
                   to="#"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Services
+                  Gallery
                 </Link>
               </li>
               <li>

@@ -15,48 +15,30 @@ const navigation = [
   { name: "Home", href: "/" },
   {
     name: "About Us",
-    href: "#",
-    subItems: [
-      {
-        name: "Our Story",
-        href: "#",
-        subItems: [
-          { name: "History", href: "#" },
-          { name: "Mission", href: "#" },
-          { name: "Vision", href: "#" },
-        ],
-      },
-      {
-        name: "Our Team",
-        href: "#",
-        subItems: [
-          { name: "Leadership", href: "#" },
-          { name: "Employees", href: "#" },
-        ],
-      },
-    ],
+    href: "/about",
   },
   {
     name: "What We Do",
     href: "#",
     subItems: [
       {
-        name: "Services",
+        name: "Event Management",
         href: "#",
         subItems: [
-          { name: "Consulting", href: "#" },
-          { name: "Development", href: "#" },
-          { name: "Design", href: "#" },
+          { name: "International Symposiums", href: "#" },
+          { name: "International Conferences", href: "#" },
+          { name: "International Seminars", href: "#" },
+          { name: "Launching Ceremony", href: "#" },
+          { name: "Trainings/Workshops", href: "#" },
         ],
       },
-      {
-        name: "Products",
-        href: "#",
-        subItems: [
-          { name: "Software", href: "#" },
-          { name: "Hardware", href: "#" },
-        ],
-      },
+      { name: "Vendor Services", href: "#" },
+      { name: "Presence in Oil & Gas Sector", href: "#" },
+      { name: "Branding & Advertising", href: "#" },
+      { name: "Facility Management Services", href: "#" },
+      { name: "Construction", href: "#" },
+      { name: "Property Advisors", href: "#" },
+      { name: "Mines & Minerals", href: "#" },
     ],
   },
   { name: "Gallery", href: "#" },
@@ -70,7 +52,7 @@ export default function Navbar() {
         <MenubarMenu key={index}>
           {
             <MenubarTrigger asChild>
-              <Link to={item.href}>
+              <Link className="cursor-pointer" to={item.href}>
                 {item.name} {item.subItems && <MdKeyboardArrowDown size={20} />}
               </Link>
             </MenubarTrigger>
@@ -79,18 +61,22 @@ export default function Navbar() {
             <MenubarContent>
               {item.subItems.map((subItem, ind) => (
                 <MenubarSub key={ind}>
-                  <MenubarSubTrigger>{subItem.name}</MenubarSubTrigger>
                   {subItem.subItems ? (
-                    <MenubarSubContent>
-                      {subItem.subItems.map((sub, i) => (
-                        <MenubarItem key={i} asChild>
-                          <a href={sub.href}>{sub.name}</a>
-                        </MenubarItem>
-                      ))}
-                    </MenubarSubContent>
+                    <>
+                      <MenubarSubTrigger>{subItem.name}</MenubarSubTrigger>
+                      <MenubarSubContent>
+                        {subItem.subItems.map((sub, i) => (
+                          <MenubarItem key={i} asChild>
+                            <Link className="cursor-pointer" to={sub.href}>
+                              {sub.name}
+                            </Link>
+                          </MenubarItem>
+                        ))}
+                      </MenubarSubContent>
+                    </>
                   ) : (
                     <MenubarItem asChild>
-                      <a href={subItem.href}>{subItem.name}</a>
+                      <Link to={subItem.href}>{subItem.name}</Link>
                     </MenubarItem>
                   )}
                 </MenubarSub>

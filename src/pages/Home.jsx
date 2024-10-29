@@ -5,26 +5,50 @@ import { LogoCarousel } from "@/components";
 
 export const services = [
   {
-    title: "Vendor Services",
+    title: "Event Management",
     image: "/services/service1.webp",
     description:
-      "Comprehensive vendor management solutions for your business needs.",
+      "Provides out-of-the-box solutions, focusing on uniqueness for every client and event.",
   },
   {
-    title: "Event Management",
+    title: "Vendor Services",
     image: "/services/service2.webp",
-    description: "Professional event planning and execution services.",
+    description:
+      "Offers quality and affordable delivery through direct sourcing and special relationships.",
+  },
+  {
+    title: "Presence in Oil & Gas Sector",
+    image: "/services/service3.webp",
+    description:
+      "Strategic operations and consulting in the oil and gas industry.",
+  },
+  {
+    title: "Branding & Advertising",
+    image: "/services/service4.webp",
+    description:
+      "Aims for client growth through strategy, consulting, development, and management.",
+  },
+  {
+    title: "Facility Management Services",
+    image: "/services/service5.webp",
+    description:
+      "Delivers quality service with trained staff for organizational image building.",
+  },
+  {
+    title: "Construction",
+    image: "/services/service6.webp",
+    description: "Professional construction services for diverse projects.",
+  },
+  {
+    title: "Property Advisors",
+    image: "/services/service7.webp",
+    description:
+      "Provides real estate services, including transactions, advisory, and investment options.",
   },
   {
     title: "Mines & Minerals",
-    image: "/services/service3.webp",
+    image: "/services/service8.webp",
     description: "Expert consulting and management in the mining sector.",
-  },
-  {
-    title: "Presence in Oil and Gas Sector",
-    image: "/services/service4.webp",
-    description:
-      "Strategic operations and consulting in the oil and gas industry.",
   },
 ];
 
@@ -114,13 +138,13 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12">Our Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {galleryItems.map((item, index) => (
-              <Card key={index} className="overflow-hidden">
+              <Card key={index} className="overflow-hidden rounded-none">
                 <img
                   src={item.image}
                   alt={item.title}
                   width={400}
                   height={300}
-                  className="w-full h-48 object-cover"
+                  className="w-full aspect-square object-cover"
                 />
                 <CardContent className="p-4">
                   <h3 className="text-lg font-semibold">{item.title}</h3>

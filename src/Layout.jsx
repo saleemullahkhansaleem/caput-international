@@ -15,7 +15,7 @@ export default function Layout() {
 
   return (
     <main
-      className={`max-w-[100vw] overflow-hidden dark:text-white ${
+      className={`dark:text-white ${
         darkMode ? "dark" : ""
       }`}
     >
