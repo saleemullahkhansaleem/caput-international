@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/menubar";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { NavbarMobile } from ".";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -71,44 +72,48 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <Menubar>
-      {navigation.map((item, index) => (
-        <MenubarMenu key={index}>
-          {
-            <MenubarTrigger asChild>
-              <Link className="cursor-pointer" to={item.href}>
-                {item.name} {item.subItems && <MdKeyboardArrowDown size={20} />}
-              </Link>
-            </MenubarTrigger>
-          }
-          {item.subItems && (
-            <MenubarContent>
-              {item.subItems.map((subItem, ind) => (
-                <MenubarSub key={ind}>
-                  {subItem.subItems ? (
-                    <>
-                      <MenubarSubTrigger>{subItem.name}</MenubarSubTrigger>
-                      <MenubarSubContent>
-                        {subItem.subItems.map((sub, i) => (
-                          <MenubarItem key={i} asChild>
-                            <Link className="cursor-pointer" to={sub.href}>
-                              {sub.name}
-                            </Link>
-                          </MenubarItem>
-                        ))}
-                      </MenubarSubContent>
-                    </>
-                  ) : (
-                    <MenubarItem asChild>
-                      <Link to={subItem.href}>{subItem.name}</Link>
-                    </MenubarItem>
-                  )}
-                </MenubarSub>
-              ))}
-            </MenubarContent>
-          )}
-        </MenubarMenu>
-      ))}
-    </Menubar>
+    <>
+      <NavbarMobile navigation={navigation} />
+      <Menubar className="hidden lg:flex">
+        {navigation.map((item, index) => (
+          <MenubarMenu key={index}>
+            {
+              <MenubarTrigger asChild>
+                <Link className="cursor-pointer" to={item.href}>
+                  {item.name}{" "}
+                  {item.subItems && <MdKeyboardArrowDown size={20} />}
+                </Link>
+              </MenubarTrigger>
+            }
+            {item.subItems && (
+              <MenubarContent>
+                {item.subItems.map((subItem, ind) => (
+                  <MenubarSub key={ind}>
+                    {subItem.subItems ? (
+                      <>
+                        <MenubarSubTrigger>{subItem.name}</MenubarSubTrigger>
+                        <MenubarSubContent>
+                          {subItem.subItems.map((sub, i) => (
+                            <MenubarItem key={i} asChild>
+                              <Link className="cursor-pointer" to={sub.href}>
+                                {sub.name}
+                              </Link>
+                            </MenubarItem>
+                          ))}
+                        </MenubarSubContent>
+                      </>
+                    ) : (
+                      <MenubarItem asChild>
+                        <Link to={subItem.href}>{subItem.name}</Link>
+                      </MenubarItem>
+                    )}
+                  </MenubarSub>
+                ))}
+              </MenubarContent>
+            )}
+          </MenubarMenu>
+        ))}
+      </Menubar>
+    </>
   );
 }

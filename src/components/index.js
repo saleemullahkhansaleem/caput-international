@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import BackToTopButton from "./BackToTopButton";
 import Navbar from "./Navbar";
 import LogoCarousel from "./LogoCarousel";
+import NavbarMobile from "./NavbarMobile";
 
 // Home
 
@@ -16,6 +17,7 @@ export {
   BackToTopButton,
   Navbar,
   LogoCarousel,
+  NavbarMobile,
 
   //   Home
   VideoSection,
