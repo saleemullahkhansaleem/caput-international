@@ -19,14 +19,20 @@ const clients = [
 
 const LogoCarousel = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
-    speed: 100,
+    speed: 50,
     autoplay: true,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     responsive: [
+      {
+        breakpoint: 1440, // XXL
+        settings: {
+          slidesToShow: 6,
+        },
+      },
       {
         breakpoint: 1280, // XL
         settings: {
@@ -45,6 +51,12 @@ const LogoCarousel = () => {
           slidesToShow: 3,
         },
       },
+      {
+        breakpoint: 425, // SM
+        settings: {
+          slidesToShow: 2,
+        },
+      },
     ],
   };
 
@@ -54,18 +66,17 @@ const LogoCarousel = () => {
         <h2 className="text-4xl font-bold text-center mb-12">Our Clients</h2>
         <Slider {...settings}>
           {clients.map((logo, index) => (
-            <div>
-              <div
-                key={index}
-                className="rounded-lg mx-auto bg-white shadow max-w-60 overflow-hidden"
-              >
+            <div key={index} className="p-2">
+              <div className="rounded-lg mx-auto bg-white shadow max-w-60 overflow-hidden">
                 <img
                   src={logo.image}
                   alt={`logo-${index}`}
                   className="object-contain p-4 w-full aspect-square mx-auto overflow-hidden"
                 />
                 <hr />
-                <p className="p-4 text-center font-bold text-lg">{logo.name}</p>
+                <p className="p-4 text-center font-bold text-xs md:text-base">
+                  {logo.name}
+                </p>
               </div>
             </div>
           ))}

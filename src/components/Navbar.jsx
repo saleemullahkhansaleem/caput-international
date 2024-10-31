@@ -20,7 +20,7 @@ const navigation = [
   },
   {
     name: "What We Do",
-    href: "/services", // Updated href for "What We Do"
+    href: "#", // Updated href for "What We Do"
     subItems: [
       {
         name: "Event Management",
@@ -91,13 +91,17 @@ export default function Navbar() {
                   <MenubarSub key={ind}>
                     {subItem.subItems ? (
                       <>
-                        <MenubarSubTrigger>{subItem.name}</MenubarSubTrigger>
+                        <MenubarSubTrigger>
+                          <Link to={subItem.href}>{subItem.name}</Link>
+                        </MenubarSubTrigger>
                         <MenubarSubContent>
                           {subItem.subItems.map((sub, i) => (
-                            <MenubarItem key={i} asChild>
-                              <Link className="cursor-pointer" to={sub.href}>
-                                {sub.name}
-                              </Link>
+                            <MenubarItem
+                              className="cursor-pointer"
+                              key={i}
+                              asChild
+                            >
+                              <Link to={sub.href}>{sub.name}</Link>
                             </MenubarItem>
                           ))}
                         </MenubarSubContent>
