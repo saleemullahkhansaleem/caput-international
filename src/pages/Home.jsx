@@ -63,14 +63,14 @@ export const services = [
 
 export default function Home() {
   const galleryItems = [
-    { title: "Project Alpha", image: "/gallery/gallery1.webp" },
     {
-      title: "Initiative Beta",
-      image: "/gallery/gallery2.webp",
-    },
-    {
-      title: "Operation Gamma",
+      title: "Recently delivered items",
       image: "/gallery/gallery3.webp",
+    },
+    { title: "Pur azam award ceremony", image: "/gallery/gallery1.webp" },
+    {
+      title: "Advance training workshop",
+      image: "/gallery/gallery2.webp",
     },
     { title: "Venture Delta", image: "/gallery/gallery4.webp" },
     {

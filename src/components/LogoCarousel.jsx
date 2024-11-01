@@ -21,8 +21,9 @@ const LogoCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 50,
+    speed: 500,
     autoplay: true,
+    autoplaySpeed: 1000,
     slidesToShow: 6,
     slidesToScroll: 1,
     arrows: true,
