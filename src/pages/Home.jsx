@@ -63,10 +63,10 @@ export const services = [
 
 export default function Home() {
   const galleryItems = [
-    {
-      title: "Recently delivered items",
-      image: "/gallery/gallery3.webp",
-    },
+      {
+        title: "Recently delivered items",
+        image: "/gallery/gallery3.webp",
+      },
     { title: "Pur azam award ceremony", image: "/gallery/gallery1.webp" },
     {
       title: "Advance training workshop",

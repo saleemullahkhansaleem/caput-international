@@ -4,7 +4,22 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout.jsx";
 import "@fontsource/poppins";
-import { AboutUs, BrandingAndAdvertising, Construction, EventManagement, FacilityManagement, Home, MinesAndMinerals, NotFound, OilAndGas, PropertyAdvisors, VendorServices } from "./pages";
+import {
+  AboutUs,
+  BrandingAndAdvertising,
+  Construction,
+  ContactUs,
+  EdgeMallCeremony,
+  EventManagement,
+  FacilityManagement,
+  Gallery,
+  Home,
+  MinesAndMinerals,
+  NotFound,
+  OilAndGas,
+  PropertyAdvisors,
+  VendorServices,
+} from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "services",
         children: [
+          {
+            path: "edge-mall-ceremony",
+            element: <EdgeMallCeremony />,
+          },
           {
             path: "event-management",
             element: <EventManagement />,
@@ -55,6 +74,14 @@ const router = createBrowserRouter([
             element: <MinesAndMinerals />,
           },
         ],
+      },
+      {
+        path: "gallery",
+        element: <Gallery />,
+      },
+      {
+        path: "contact",
+        element: <ContactUs />,
       },
       {
         path: "*",

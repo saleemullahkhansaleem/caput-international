@@ -1,5 +1,6 @@
 import { services } from "@/pages/Home";
 import { Link } from "react-router-dom";
+import { navigation } from "./Navbar";
 
 export default function Footer() {
   return (
@@ -7,6 +8,17 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
+            <div className="text-lg md:text-3xl font-bold text-foregroundMuted mb-8">
+              <Link to="/" className="flex items-end gap-2">
+                <img
+                  src="/logo.png"
+                  alt="logo"
+                  height={100}
+                  className="h-12 md:h-16"
+                />{" "}
+                <span className="pb-1 md:pb-2">CAPUT International</span>
+              </Link>
+            </div>
             <h3 className="text-xl font-semibold mb-4">About Us</h3>
             <p className="text-muted-foreground">
               We are a leading company providing innovative solutions across
@@ -15,11 +27,26 @@ export default function Footer() {
             </p>
           </div>
           <div>
+            <h3 className="text-xl font-semibold mb-4">Our Services</h3>
+            <ul className="space-y-2">
+              {navigation[2]?.subItems?.map((service, index) => (
+                <li key={index}>
+                  <Link
+                    to={service.href}
+                    className="text-muted-foreground hover:text-foreground"
+                  >
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="#"
+                  to="/"
                   className="text-muted-foreground hover:text-foreground"
                 >
                   Home
@@ -35,7 +62,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/gallery"
                   className="text-muted-foreground hover:text-foreground"
                 >
                   Gallery
@@ -43,27 +70,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/contact"
                   className="text-muted-foreground hover:text-foreground"
                 >
                   Contact
                 </Link>
               </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Our Services</h3>
-            <ul className="space-y-2">
-              {services.map((service, index) => (
-                <li key={index}>
-                  <Link
-                    to={service.path}
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    {service.title}
-                  </Link>
-                </li>
-              ))}
             </ul>
           </div>
         </div>

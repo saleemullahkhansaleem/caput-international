@@ -1,22 +1,28 @@
 import Home from "./Home";
 import NotFound from "./NotFound";
 import AboutUs from "./AboutUs";
+import Gallery from "./Gallery";
+import ContactUs from "./ContactUs";
 
 // Importing service components
-import EventManagement from "./EventManagement";
-import VendorServices from "./VendorServices";
-import OilAndGas from "./OilAndGas";
-import BrandingAndAdvertising from "./BrandingAndAdvertising";
-import FacilityManagement from "./FacilityManagement";
-import Construction from "./Construction";
-import PropertyAdvisors from "./PropertyAdvisors";
-import MinesAndMinerals from "./MinesAndMinerals";
+import EdgeMallCeremony from "./services/EdgeMallCeremony";
+import EventManagement from "./services/EventManagement";
+import VendorServices from "./services/VendorServices";
+import OilAndGas from "./services/OilAndGas";
+import BrandingAndAdvertising from "./services/BrandingAndAdvertising";
+import FacilityManagement from "./services/FacilityManagement";
+import Construction from "./services/Construction";
+import PropertyAdvisors from "./services/PropertyAdvisors";
+import MinesAndMinerals from "./services/MinesAndMinerals";
 
 // Exporting components
 export {
   Home,
   NotFound,
   AboutUs,
+  Gallery,
+  ContactUs,
+  EdgeMallCeremony,
   EventManagement,
   VendorServices,
   OilAndGas,

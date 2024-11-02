@@ -12,7 +12,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { NavbarMobile } from ".";
 
-const navigation = [
+export const navigation = [
   { name: "Home", href: "/" },
   {
     name: "About Us",
@@ -20,11 +20,15 @@ const navigation = [
   },
   {
     name: "What We Do",
-    href: "#", // Updated href for "What We Do"
+    href: "#", 
     subItems: [
       {
+        name: "Launching Ceremony of the Edge Mall - Faisalabad",
+        href: "/services/edge-mall-ceremony",
+      },
+      {
         name: "Event Management",
-        href: "/services/event-management", // Updated href for "Event Management"
+        href: "/services/event-management", 
         subItems: [
           {
             name: "International Symposiums",
