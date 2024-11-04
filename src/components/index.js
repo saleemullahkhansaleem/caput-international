@@ -9,6 +9,7 @@ import NavbarMobile from "./NavbarMobile";
 // Home
 
 import VideoSection from "./VideoSection";
+import HighlightedEvent from "./HighlightedEvent";
 
 export {
   Container,
@@ -21,4 +22,5 @@ export {
 
   //   Home
   VideoSection,
+  HighlightedEvent,
 };

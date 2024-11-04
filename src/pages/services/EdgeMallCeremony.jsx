@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { useState } from "react";
 import { FaPlay, FaYoutube } from "react-icons/fa";
+import { ImSpinner8 } from "react-icons/im"; // Import a spinner icon
 
 const videos = [
   {
@@ -79,6 +79,12 @@ const videos = [
 
 export default function VideoGallery() {
   const [currentVideo, setCurrentVideo] = useState(null);
+  const [isLoading, setIsLoading] = useState(false); // Loading state
+
+  const handleVideoClick = (videoUrl) => {
+    setIsLoading(true); // Start loading
+    setCurrentVideo(videoUrl);
+  };
 
   return (
     <div className="flex flex-col items-center min-h-[70vh] py-10">
@@ -87,10 +93,10 @@ export default function VideoGallery() {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full container px-4">
         {videos.map((video) => (
-          <Dialog key={video.id}>
+          <Dialog key={video.id} onOpenChange={() => setIsLoading(true)}>
             <DialogTrigger asChild>
               <div>
-                <div className="relative group cursor-pointer ">
+                <div className="relative group cursor-pointer">
                   <img
                     src={video.thumbnail}
                     alt={video.title}
@@ -100,7 +106,7 @@ export default function VideoGallery() {
                     <FaPlay
                       size={60}
                       className="text-destructive"
-                      onClick={() => setCurrentVideo(video.videoUrl)}
+                      onClick={() => handleVideoClick(video.videoUrl)}
                     />
                   </div>
                 </div>
@@ -112,13 +118,21 @@ export default function VideoGallery() {
             <DialogContent className="bg-white p-4 rounded-lg shadow-lg max-w-7xl mx-auto">
               {currentVideo && (
                 <div className="relative w-full h-0 pb-[56.25%]">
+                  {isLoading && (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <ImSpinner8 className="text-primary animate-spin text-4xl" />
+                    </div>
+                  )}
                   <iframe
                     src={currentVideo}
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full rounded-lg"
+                    className={`absolute top-0 left-0 w-full h-full rounded-lg ${
+                      isLoading ? "hidden" : ""
+                    }`}
+                    onLoad={() => setIsLoading(false)} // Stop loading once video is ready
                   ></iframe>
                 </div>
               )}

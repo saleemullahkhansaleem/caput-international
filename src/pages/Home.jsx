@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
-import { LogoCarousel, VideoSection } from "@/components";
+import { HighlightedEvent, LogoCarousel, VideoSection } from "@/components";
 import { Link } from "react-router-dom";
 
 export const services = [
@@ -63,10 +63,10 @@ export const services = [
 
 export default function Home() {
   const galleryItems = [
-      {
-        title: "Recently delivered items",
-        image: "/gallery/gallery3.webp",
-      },
+    {
+      title: "Recently delivered items",
+      image: "/gallery/gallery3.webp",
+    },
     { title: "Pur azam award ceremony", image: "/gallery/gallery1.webp" },
     {
       title: "Advance training workshop",
@@ -85,6 +85,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <VideoSection />
+      <HighlightedEvent />
 
       {/* Services Section */}
       <section className="py-20 bg-muted">
