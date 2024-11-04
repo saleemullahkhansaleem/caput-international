@@ -5,30 +5,7 @@ import Gallery from "./Gallery";
 import ContactUs from "./ContactUs";
 
 // Importing service components
-import EdgeMallCeremony from "./services/EdgeMallCeremony";
-import EventManagement from "./services/EventManagement";
-import VendorServices from "./services/VendorServices";
-import OilAndGas from "./services/OilAndGas";
-import BrandingAndAdvertising from "./services/BrandingAndAdvertising";
-import FacilityManagement from "./services/FacilityManagement";
-import Construction from "./services/Construction";
-import PropertyAdvisors from "./services/PropertyAdvisors";
-import MinesAndMinerals from "./services/MinesAndMinerals";
+import EdgeMallCeremony from "./EdgeMallCeremony";
 
 // Exporting components
-export {
-  Home,
-  NotFound,
-  AboutUs,
-  Gallery,
-  ContactUs,
-  EdgeMallCeremony,
-  EventManagement,
-  VendorServices,
-  OilAndGas,
-  BrandingAndAdvertising,
-  FacilityManagement,
-  Construction,
-  PropertyAdvisors,
-  MinesAndMinerals,
-};
+export { Home, NotFound, AboutUs, Gallery, ContactUs, EdgeMallCeremony };
