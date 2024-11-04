@@ -5,6 +5,7 @@ import BackToTopButton from "./BackToTopButton";
 import Navbar from "./Navbar";
 import LogoCarousel from "./LogoCarousel";
 import NavbarMobile from "./NavbarMobile";
+import ServiceDetail from "./ServiceDetail";
 
 // Home
 
@@ -19,6 +20,7 @@ export {
   Navbar,
   LogoCarousel,
   NavbarMobile,
+  ServiceDetail,
 
   //   Home
   VideoSection,

@@ -1,9 +1,6 @@
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
+import { DialogTitle } from "@radix-ui/react-dialog";
 import { useState } from "react";
 import { FaPlay, FaYoutube } from "react-icons/fa";
 import { ImSpinner8 } from "react-icons/im"; // Import a spinner icon
@@ -106,7 +103,7 @@ export default function VideoGallery() {
                     <FaPlay
                       size={60}
                       className="text-destructive"
-                      onClick={() => handleVideoClick(video.videoUrl)}
+                      onClick={() => handleVideoClick(video)}
                     />
                   </div>
                 </div>
@@ -123,8 +120,10 @@ export default function VideoGallery() {
                       <ImSpinner8 className="text-primary animate-spin text-4xl" />
                     </div>
                   )}
+                  <DialogTitle>{currentVideo.title}</DialogTitle>
+                  <DialogDescription></DialogDescription>
                   <iframe
-                    src={currentVideo}
+                    src={currentVideo.videoUrl}
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

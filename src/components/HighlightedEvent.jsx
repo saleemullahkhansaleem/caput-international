@@ -14,17 +14,17 @@ export default function HighlightedEvent() {
     <section className="py-8 bg-primary">
       <div className="container mx-auto text-white flex flex-col lg:flex-row items-center justify-between p-4">
         <div className="text-center lg:text-left">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-xl md:text-3xl font-bold mb-4">
             Launching Ceremony of The Edge Mall, Faisalabad
           </h2>
-          <p className="text-muted">
+          <p className="text-muted text-sm md:text-base">
             A momentous event with inspiring speeches, presentations, and the
             unveiling of The Edge Mall.
           </p>
         </div>
         <div className="mt-6 lg:mt-0 lg:ml-8">
-          <Link to="/services/edge-mall-ceremony" passHref>
-            <Button size="lg" variant='secondary' className="">
+          <Link to="/edge-mall-ceremony">
+            <Button size="lg" variant="secondary" className="">
               Show Details <FaArrowRight className="ml-2" />
             </Button>
           </Link>

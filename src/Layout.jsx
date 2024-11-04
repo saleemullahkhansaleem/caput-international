@@ -14,11 +14,7 @@ export default function Layout() {
   }, [darkMode]);
 
   return (
-    <main
-      className={`dark:text-white ${
-        darkMode ? "dark" : ""
-      }`}
-    >
+    <main className={darkMode ? "dark" : ""}>
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
       <Outlet />
       <Footer />

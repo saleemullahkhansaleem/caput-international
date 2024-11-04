@@ -20,15 +20,15 @@ export const navigation = [
   },
   {
     name: "What We Do",
-    href: "#", 
+    href: "#",
     subItems: [
       {
         name: "Launching Ceremony of the Edge Mall - Faisalabad",
-        href: "/services/edge-mall-ceremony",
+        href: "/edge-mall-ceremony",
       },
       {
         name: "Event Management",
-        href: "/services/event-management", 
+        href: "/services/event-management",
         subItems: [
           {
             name: "International Symposiums",
@@ -55,19 +55,19 @@ export const navigation = [
       { name: "Vendor Services", href: "/services/vendor-services" },
       {
         name: "Presence in Oil & Gas Sector",
-        href: "/services/presence-in-oil-and-gas-sector",
+        href: "/services/oil-gas-sector",
       },
       {
         name: "Branding & Advertising",
-        href: "/services/branding-and-advertising",
+        href: "/services/branding-advertising",
       },
       {
         name: "Facility Management Services",
-        href: "/services/facility-management-services",
+        href: "/services/facility-management",
       },
       { name: "Construction", href: "/services/construction" },
       { name: "Property Advisors", href: "/services/property-advisors" },
-      { name: "Mines & Minerals", href: "/services/mines-and-minerals" },
+      { name: "Mines & Minerals", href: "/services/mines-minerals" },
     ],
   },
   { name: "Gallery", href: "/gallery" }, // Updated href for "Gallery"

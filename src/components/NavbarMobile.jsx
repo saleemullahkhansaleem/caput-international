@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetTitle,
@@ -31,14 +32,15 @@ export default function NavbarMobile({ navigation = [] }) {
           <div className="flex flex-col gap-2">
             {navigation?.map((category, index) =>
               !category?.subItems ? (
-                <Link
-                  key={index}
-                  to={category.href}
-                  className="flex items-center gap-3 rounded py-1 transition-all hover:text-primary"
-                  {...(category.prefetch ? { prefetch: "true" } : {})}
-                >
-                  {category.name}
-                </Link>
+                <SheetClose key={index} asChild>
+                  <Link
+                    to={category.href}
+                    className="flex items-center gap-3 rounded py-1 transition-all hover:text-primary"
+                    {...(category.prefetch ? { prefetch: "true" } : {})}
+                  >
+                    {category.name}
+                  </Link>
+                </SheetClose>
               ) : (
                 <Collapsible key={index}>
                   <CollapsibleTrigger className="flex items-center gap-3 rounded py-1 w-full transition-all hover:text-primary">
@@ -59,28 +61,30 @@ export default function NavbarMobile({ navigation = [] }) {
                           </CollapsibleTrigger>
                           <CollapsibleContent className="ml-4 space-y-2">
                             {item?.subItems.map((subItem, subIdx) => (
-                              <Link
-                                key={subIdx}
-                                to={subItem.href}
-                                className="flex items-center gap-2 pt-2 hover:text-primary"
-                                {...(subItem.prefetch
-                                  ? { prefetch: "true" }
-                                  : {})}
-                              >
-                                {subItem.name}
-                              </Link>
+                              <SheetClose key={subIdx} asChild>
+                                <Link
+                                  to={subItem.href}
+                                  className="flex items-center gap-2 pt-2 hover:text-primary"
+                                  {...(subItem.prefetch
+                                    ? { prefetch: "true" }
+                                    : {})}
+                                >
+                                  {subItem.name}
+                                </Link>
+                              </SheetClose>
                             ))}
                           </CollapsibleContent>
                         </Collapsible>
                       ) : (
-                        <Link
-                          key={idx}
-                          to={item.href}
-                          className="flex items-center gap-2 pt-2 hover:text-primary"
-                          {...(item.prefetch ? { prefetch: "true" } : {})}
-                        >
-                          {item.name}
-                        </Link>
+                        <SheetClose key={idx} asChild>
+                          <Link
+                            to={item.href}
+                            className="flex items-center gap-2 pt-2 hover:text-primary"
+                            {...(item.prefetch ? { prefetch: "true" } : {})}
+                          >
+                            {item.name}
+                          </Link>
+                        </SheetClose>
                       )
                     )}
                   </CollapsibleContent>

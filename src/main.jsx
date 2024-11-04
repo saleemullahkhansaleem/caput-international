@@ -20,6 +20,7 @@ import {
   PropertyAdvisors,
   VendorServices,
 } from "./pages";
+import { ServiceDetail } from "./components";
 
 const router = createBrowserRouter([
   {
@@ -35,45 +36,46 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-        path: "services",
-        children: [
-          {
-            path: "edge-mall-ceremony",
-            element: <EdgeMallCeremony />,
-          },
-          {
-            path: "event-management",
-            element: <EventManagement />,
-          },
-          {
-            path: "vendor-services",
-            element: <VendorServices />,
-          },
-          {
-            path: "presence-in-oil-and-gas-sector",
-            element: <OilAndGas />,
-          },
-          {
-            path: "branding-and-advertising",
-            element: <BrandingAndAdvertising />,
-          },
-          {
-            path: "facility-management-services",
-            element: <FacilityManagement />,
-          },
-          {
-            path: "construction",
-            element: <Construction />,
-          },
-          {
-            path: "property-advisors",
-            element: <PropertyAdvisors />,
-          },
-          {
-            path: "mines-and-minerals",
-            element: <MinesAndMinerals />,
-          },
-        ],
+        path: "edge-mall-ceremony",
+        element: <EdgeMallCeremony />,
+      },
+      {
+        path: "services/:serviceId",
+        element: <ServiceDetail />,
+        // children: [
+        //   {
+        //     path: "event-management",
+        //     element: <EventManagement />,
+        //   },
+        //   {
+        //     path: "vendor-services",
+        //     element: <VendorServices />,
+        //   },
+        //   {
+        //     path: "presence-in-oil-and-gas-sector",
+        //     element: <OilAndGas />,
+        //   },
+        //   {
+        //     path: "branding-and-advertising",
+        //     element: <BrandingAndAdvertising />,
+        //   },
+        //   {
+        //     path: "facility-management-services",
+        //     element: <FacilityManagement />,
+        //   },
+        //   {
+        //     path: "construction",
+        //     element: <Construction />,
+        //   },
+        //   {
+        //     path: "property-advisors",
+        //     element: <PropertyAdvisors />,
+        //   },
+        //   {
+        //     path: "mines-and-minerals",
+        //     element: <MinesAndMinerals />,
+        //   },
+        // ],
       },
       {
         path: "gallery",

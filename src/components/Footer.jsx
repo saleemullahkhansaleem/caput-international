@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 py-4 border-t border-muted-foreground/20 text-center text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Your Company Name. All rights
+            &copy; {new Date().getFullYear()} CAPUT International - All rights
             reserved.
           </p>
         </div>
