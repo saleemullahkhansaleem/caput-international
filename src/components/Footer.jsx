@@ -9,7 +9,7 @@ export default function Footer({ setDarkMode, darkMode }) {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="text-lg md:text-3xl font-bold text-foregroundMuted mb-8">
+            <div className="text-foreground mb-8 border-b border-primary/50 pb-4">
               <Link to="/" className="flex items-end gap-2">
                 <img
                   src="/logo.png"
@@ -17,7 +17,14 @@ export default function Footer({ setDarkMode, darkMode }) {
                   height={100}
                   className="h-12 md:h-16"
                 />{" "}
-                <span className="pb-1 md:pb-2">CAPUT International</span>
+                <div className="flex flex-col items-end">
+                  <span className="text-lg md:text-3xl font-bold">
+                    CAPUT International
+                  </span>{" "}
+                  <span className="text-sm md:text-base font-semibold">
+                    (Private) Limited
+                  </span>
+                </div>
               </Link>
             </div>
             <h3 className="text-xl font-semibold mb-4">About Us</h3>
@@ -83,8 +90,8 @@ export default function Footer({ setDarkMode, darkMode }) {
         <BackToTopButton />
         <div className="mt-8 p-2 border-t border-muted-foreground/20 flex justify-between items-center text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} CAPUT International - All rights
-            reserved.
+            &copy; {new Date().getFullYear()} CAPUT International (Private)
+            Limited - All rights reserved.
           </p>
           <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
         </div>

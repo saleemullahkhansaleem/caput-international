@@ -1,5 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { useState } from "react";
 import { FaPlay, FaYoutube } from "react-icons/fa";
@@ -8,43 +13,46 @@ import { ImSpinner8 } from "react-icons/im"; // Import a spinner icon
 const videos = [
   {
     id: "1",
-    title: "Quran Recitation",
+    title: "Recitation of Holy Quran, Naat Shareef & Sufi Qalam",
     thumbnail: "/edge-mall/v1.webp",
     videoUrl: "https://www.youtube.com/embed/diD3RL6iG6w?si=stT7_nT5AR-rDMtI",
   },
   {
     id: "2",
-    title: "Tasneem Sabri",
+    title: "Mr. Tasneem Sabri Welcoming the Guests",
     thumbnail: "/edge-mall/v2.webp",
     videoUrl: "https://www.youtube.com/embed/1qojKO7ohHA?si=zxCOonj71yEdxiaA",
   },
   {
     id: "3",
-    title: "COO Go Petroleum",
+    title:
+      "Presentation of Mr. Zeeshan Tayyab, COO, Go Petroleum & Sitara Heights",
     thumbnail: "/edge-mall/v3.webp",
     videoUrl: "https://www.youtube.com/embed/Q04VLVV4w3g?si=EtOnYk2Z82Jc0OD_",
   },
   {
     id: "4",
-    title: "Jamshed Khan",
+    title: "Presentation of Architect Mr. Jamshed Khan",
     thumbnail: "/edge-mall/v4.webp",
     videoUrl: "https://www.youtube.com/embed/_IVCPgzvSRo?si=dEbP4lmPbuv-946O",
   },
   {
     id: "5",
-    title: "Zameen.Com",
+    title:
+      "Presentation of Sheikh Shuja Ullah Khan, Senior Director & M/S Muzaffar Majeed, Regional Head & Asad Saleem, Regional Sales Manager Zameen.com",
     thumbnail: "/edge-mall/v5.webp",
     videoUrl: "https://www.youtube.com/embed/n-o1q2QHBwM?si=qkIDkV1PW0Yiuy-Y",
   },
   {
     id: "6",
-    title: "Mazhar Abbas",
+    title: "Mr. Mazhar Abbas addressing the Ceremony",
     thumbnail: "/edge-mall/v6.webp",
     videoUrl: "https://www.youtube.com/embed/kihcuYNGVwE?si=sIM3Aq1bk084znak",
   },
   {
     id: "7",
-    title: "Unveiling of Project",
+    title:
+      "Unveiling of The Egde Mall, Faisalabad by Haji Javed Iqbal Qaiser, Group Head Go Petroleum & Sitara Heights",
     thumbnail: "/edge-mall/v7.webp",
     videoUrl: "https://www.youtube.com/embed/3KT2jXIBO5k?si=-e_4FE7rQfaxl_M4",
   },
@@ -56,7 +64,7 @@ const videos = [
   },
   {
     id: "9",
-    title: "Performance of Nadeem Abbas",
+    title: "Performance of Nadeem Abbas Lunewala",
     thumbnail: "/edge-mall/v9.webp",
     videoUrl: "https://www.youtube.com/embed/auA4EjIgpys?si=T1dkDxfarpbiKNrX",
   },
@@ -86,7 +94,7 @@ export default function VideoGallery() {
   return (
     <div className="flex flex-col items-center min-h-[70vh] py-10">
       <h1 className="text-4xl font-bold mb-12 text-center">
-        Edge Mall - Video Gallery
+        Launching Ceremony of The Edge Mall, Faisalabad
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full container px-4">
         {videos.map((video) => (
@@ -107,7 +115,7 @@ export default function VideoGallery() {
                     />
                   </div>
                 </div>
-                <h3 className="lg:text-lg text-center font-bold text-secondary-foreground p-2">
+                <h3 className="lg:text-lg text-center font-semibold text-secondary-foreground p-2">
                   {video.title}
                 </h3>
               </div>
