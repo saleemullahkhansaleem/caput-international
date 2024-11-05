@@ -1,3 +1,4 @@
+import ThemeToggle from "./ThemeToggle";
 import Container from "./Container";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -13,6 +14,7 @@ import VideoSection from "./VideoSection";
 import HighlightedEvent from "./HighlightedEvent";
 
 export {
+  ThemeToggle,
   Container,
   Header,
   Footer,

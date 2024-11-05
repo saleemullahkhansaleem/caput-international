@@ -1,4 +1,3 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { useState } from "react";
 import { contactData } from "./Home";
 import { Card, CardContent } from "@/components/ui/card";
@@ -70,7 +69,7 @@ export default function ContactUs() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full p-2 bg-gray-100 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary"
+                className="w-full py-2 px-4 bg-foreground/5 rounded-lg border focus:border-primary focus:ring-2 focus:ring-primary"
               />
               <input
                 type="email"
@@ -79,7 +78,7 @@ export default function ContactUs() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full p-2 bg-gray-100 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary"
+                className="w-full py-2 px-4 bg-foreground/5 rounded-lg border focus:border-primary focus:ring-2 focus:ring-primary"
               />
               <textarea
                 name="message"
@@ -88,7 +87,7 @@ export default function ContactUs() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full p-2 bg-gray-100 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary"
+                className="w-full py-2 px-4 bg-foreground/5 rounded-lg border focus:border-primary focus:ring-2 focus:ring-primary"
               />
               <Button type="submit" variant="" className="w-full" size="lg">
                 Send Message
@@ -97,7 +96,7 @@ export default function ContactUs() {
           </div>
 
           {/* Map Section */}
-          <div className="w-full h-96 bg-gray-300 rounded-lg overflow-hidden shadow-md">
+          <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6637.707178956316!2d73.0598921761663!3d33.71273723558022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfa2b4a3278d%3A0x34a59e63033052c2!2sAl-Malik%20Centre!5e0!3m2!1sen!2sus!4v1730717219153!5m2!1sen!2sus"
               width="100%"

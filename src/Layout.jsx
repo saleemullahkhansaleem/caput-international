@@ -14,10 +14,10 @@ export default function Layout() {
   }, [darkMode]);
 
   return (
-    <main className={darkMode ? "dark" : ""}>
+    <main className={`bg-background text-foreground ${darkMode ? "dark" : ""}`}>
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
       <Outlet />
-      <Footer />
+      <Footer setDarkMode={setDarkMode} darkMode={darkMode} />
     </main>
   );
 }

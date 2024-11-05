@@ -1,8 +1,9 @@
 import { services } from "@/pages/Home";
 import { Link } from "react-router-dom";
 import { navigation } from "./Navbar";
+import { ThemeToggle } from ".";
 
-export default function Footer() {
+export default function Footer({ setDarkMode, darkMode }) {
   return (
     <footer className="bg-muted pt-12 dark text-foreground">
       <div className="container mx-auto px-4">
@@ -25,6 +26,7 @@ export default function Footer() {
               various industries. Our commitment to excellence and customer
               satisfaction sets us apart.
             </p>
+            <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Our Services</h3>

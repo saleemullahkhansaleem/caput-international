@@ -68,11 +68,11 @@ const LogoCarousel = () => {
         <Slider {...settings}>
           {clients.map((logo, index) => (
             <div key={index} className="p-2">
-              <div className="rounded-lg mx-auto bg-white shadow max-w-60 overflow-hidden">
+              <div className="rounded-lg mx-auto bg-background shadow max-w-60 overflow-hidden">
                 <img
                   src={logo.image}
                   alt={`logo-${index}`}
-                  className="object-contain p-4 w-full aspect-square mx-auto overflow-hidden"
+                  className="object-contain p-4 w-full aspect-square mx-auto overflow-hidden rounded-t-lg bg-white"
                 />
                 <hr />
                 <p className="p-4 text-center font-bold text-xs md:text-base">

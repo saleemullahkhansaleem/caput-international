@@ -106,7 +106,7 @@ export default function ServiceDetail() {
           <h1 className="text-4xl font-bold text-primary mb-4">
             {serviceData.title}
           </h1>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             {serviceData.description}
           </p>
         </div>
@@ -129,16 +129,13 @@ export default function ServiceDetail() {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {serviceData.subTopics.map((subTopic) => (
-              <Card
-                key={subTopic.id}
-                className="p-6 shadow-lg rounded-lg bg-white"
-              >
+              <Card key={subTopic.id} className="">
                 <CardHeader>
-                  <CardTitle className="font-semibold text-lg text-primary mb-2">
+                  <CardTitle className="font-semibold text-lg mb-2">
                     {subTopic.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="text-gray-600">
+                <CardContent className="text-muted-foreground">
                   {subTopic.description}
                 </CardContent>
               </Card>
@@ -150,7 +147,7 @@ export default function ServiceDetail() {
   ) : (
     <section className="container mx-auto py-16 px-6 lg:px-8 text-center">
       <h2 className="text-3xl font-bold text-red-600">Service not found</h2>
-      <p className="mt-4 text-gray-600">
+      <p className="mt-4 text-muted-foreground">
         The service you're looking for does not exist.
       </p>
     </section>
