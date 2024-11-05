@@ -111,7 +111,7 @@ export default function Gallery() {
           <DialogTrigger asChild>
             <button style={{ display: "none" }} />
           </DialogTrigger>
-          <DialogContent className="flex flex-col justify-center items-center max-w-5xl">
+          <DialogContent className="flex flex-col justify-center items-center max-w-5xl bg-background">
             {currentGallery && (
               <>
                 <DialogTitle>{currentGallery.title}</DialogTitle>

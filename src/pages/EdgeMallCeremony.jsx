@@ -120,7 +120,7 @@ export default function VideoGallery() {
                 </h3>
               </div>
             </DialogTrigger>
-            <DialogContent className="bg-white p-4 rounded-lg shadow-lg max-w-7xl mx-auto">
+            <DialogContent className="bg-background p-4 rounded-lg shadow-lg max-w-7xl mx-auto">
               {currentVideo && (
                 <div className="relative w-full h-0 pb-[56.25%]">
                   {isLoading && (

@@ -9,7 +9,7 @@ export default function Footer({ setDarkMode, darkMode }) {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="text-foreground mb-8 border-b border-primary/50 pb-4">
+            <div className="text-foreground mb-8 border-b border-white/5 pb-4">
               <Link to="/" className="flex items-end gap-2">
                 <img
                   src="/logo.png"
