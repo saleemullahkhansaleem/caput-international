@@ -1,8 +1,9 @@
 import ThemeToggle from "./ThemeToggle";
+import ScrollToTop from "./ScrollToTop";
+import BackToTopButton from "./BackToTopButton";
 import Container from "./Container";
 import Header from "./Header";
 import Footer from "./Footer";
-import BackToTopButton from "./BackToTopButton";
 import Navbar from "./Navbar";
 import LogoCarousel from "./LogoCarousel";
 import NavbarMobile from "./NavbarMobile";
@@ -15,10 +16,11 @@ import HighlightedEvent from "./HighlightedEvent";
 
 export {
   ThemeToggle,
+  ScrollToTop,
+  BackToTopButton,
   Container,
   Header,
   Footer,
-  BackToTopButton,
   Navbar,
   LogoCarousel,
   NavbarMobile,

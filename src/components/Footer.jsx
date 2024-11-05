@@ -1,7 +1,7 @@
 import { services } from "@/pages/Home";
 import { Link } from "react-router-dom";
 import { navigation } from "./Navbar";
-import { ThemeToggle } from ".";
+import { BackToTopButton, ThemeToggle } from ".";
 
 export default function Footer({ setDarkMode, darkMode }) {
   return (
@@ -26,7 +26,6 @@ export default function Footer({ setDarkMode, darkMode }) {
               various industries. Our commitment to excellence and customer
               satisfaction sets us apart.
             </p>
-            <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Our Services</h3>
@@ -81,11 +80,13 @@ export default function Footer({ setDarkMode, darkMode }) {
             </ul>
           </div>
         </div>
-        <div className="mt-8 py-4 border-t border-muted-foreground/20 text-center text-muted-foreground">
+        <BackToTopButton />
+        <div className="mt-8 p-2 border-t border-muted-foreground/20 flex justify-between items-center text-muted-foreground">
           <p>
             &copy; {new Date().getFullYear()} CAPUT International - All rights
             reserved.
           </p>
+          <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
         </div>
       </div>
     </footer>
