@@ -127,7 +127,6 @@ export default function ServiceDetail() {
       ],
     },
   ];
-  
 
   const serviceData = servicesData.find((service) => service.id === serviceId);
 
@@ -158,7 +157,7 @@ export default function ServiceDetail() {
       {serviceData.subTopics && (
         <div className="mt-16 space-y-8">
           <h3 className="text-2xl font-semibold text-primary mb-6">
-            Event Management Services
+            {serviceData.title} Services
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {serviceData.subTopics.map((subTopic) => (
