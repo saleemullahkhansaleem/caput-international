@@ -67,11 +67,33 @@ export const navigation = [
       },
       { name: "Construction", href: "/services/construction" },
       { name: "Property Advisors", href: "/services/property-advisors" },
-      { name: "Mines & Minerals", href: "/services/mines-minerals" },
+      {
+        name: "Mines & Minerals",
+        href: "/services/mines-minerals",
+        subItems: [
+          {
+            name: "Construction And Industrial Minerals Group",
+            href: "/services/mines-minerals#construction-industrial",
+          },
+          {
+            name: "Dimension Stone",
+            href: "/services/mines-minerals#dimension-stone",
+          },
+          {
+            name: "Fuel Minerals",
+            href: "/services/mines-minerals#fuel-minerals",
+          },
+          { name: "Gemstones", href: "/services/mines-minerals#gemstones" },
+          {
+            name: "Base/ Metallic Minerals Group",
+            href: "/services/mines-minerals#base-metallic",
+          },
+        ],
+      },
     ],
   },
-  { name: "Gallery", href: "/gallery" }, // Updated href for "Gallery"
-  { name: "Contact Us", href: "/contact" }, // Updated href for "Contact Us"
+  { name: "Gallery", href: "/gallery" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar() {
