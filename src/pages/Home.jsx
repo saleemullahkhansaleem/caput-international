@@ -33,7 +33,7 @@ export const services = [
     image: "/services/service4.webp",
     path: "/services/branding-advertising",
     description:
-      "Aims for client growth through strategy, consulting, development, and management.",
+      "Aims for client (s) growth through strategy, consulting, development, and management.",
   },
   {
     title: "Facility Management Services",

@@ -1,5 +1,12 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { useParams } from "react-router-dom";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+  CardFooter,
+} from "@/components/ui/card";
+import { Link, useParams } from "react-router-dom";
+import { Button } from "./ui/button";
 
 export default function ServiceDetail() {
   const { serviceId } = useParams();
@@ -10,7 +17,7 @@ export default function ServiceDetail() {
       id: "event-management",
       title: "Event Management",
       description:
-        "CAPUT International has come a long way by steadily increasing its satisfied clientele base through providing out-of-the-box solutions. Our creative team, being well-versed with the market pulse, ensures that dreams come true for every client. As the premier event planning and management company in Pakistan, we consider every client and event 'UNIQUE'.",
+        "CAPUT International (Pvt.) Ltd. has come a long way by steadily increasing its satisfied clientele base through providing out-of-the-box solutions. Our creative team, being well-versed with the market pulse, ensures that dreams come true for every client. As the premier event planning and management company in Pakistan, we consider every client and event 'UNIQUE'.",
       imageUrl: "/services/service1.webp",
       subTopics: [
         {
@@ -49,49 +56,49 @@ export default function ServiceDetail() {
       id: "vendor-services",
       title: "Vendor Services",
       description:
-        "With diversified experience in this field, we offer tailor-made solutions for each client. CAPUT International focuses on quality and affordability, ensuring door-step delivery within an affordable range. This is achieved through special relationships with vendors, directly sourcing quality products, and passing the savings onto our valuable clients.",
+        "With diversified experience in this field, we offer tailor-made solutions for each client. CAPUT International (Pvt.) Ltd. focuses on quality and affordability, ensuring door-step delivery within an affordable range. This is achieved through special relationships with vendors, directly sourcing quality products, and passing the savings onto our valuable client (s).",
       imageUrl: "/services/service2.webp",
     },
     {
       id: "oil-gas-sector",
       title: "Presence in Oil & Gas Sector",
       description:
-        "CAPUT International is actively engaged in the Oil & Gas sector, offering expertise and solutions tailored for industry demands. We focus on operational efficiency, safety, and quality, ensuring our services support the sector’s rigorous standards. Our presence in this sector underscores our commitment to serve critical industries with precision and excellence.",
+        "CAPUT International (Pvt.) Ltd. is actively engaged in the Oil & Gas sector, offering expertise and solutions tailored for industry demands. We focus on operational efficiency, safety, and quality, ensuring our services support the sector’s rigorous standards. Our presence in this sector underscores our commitment to serve critical industries with precision and excellence.",
       imageUrl: "/services/service3.webp",
     },
     {
       id: "branding-advertising",
       title: "Branding & Advertising",
       description:
-        "CAPUT International strives to grow together with clients, focusing on success through brand and company transformation. We leverage strategy, consulting, development, management, and research to create impactful digital and real-world experiences. By combining our unique process and community, we build strong partnerships that drive growth.",
+        "CAPUT International (Pvt.) Ltd. strives to grow together with client (s), focusing on success through brand and company transformation. We leverage strategy, consulting, development, management, and research to create impactful digital and real-world experiences. By combining our unique process and community, we build strong partnerships that drive growth.",
       imageUrl: "/services/service4.webp",
     },
     {
       id: "facility-management",
       title: "Facility Management Services",
       description:
-        "CAPUT International (PVT) Limited provides effective, professional, and courteous service management. Our mission is to deliver the highest level of service in a cost-effective manner, minimizing risks. Our trained and courteous workforce enhances the image of your organization, embodying our principle of 'Growing Together.'",
+        "CAPUT International (Pvt.) Ltd. provides effective, professional, and courteous service management. Our mission is to deliver the highest level of service in a cost-effective manner, minimizing risks factor. Our trained and courteous workforce enhances the image of your organization, embodying our principle of 'Growing Together.'",
       imageUrl: "/services/service5.webp",
     },
     {
       id: "construction",
       title: "Construction",
       description:
-        "CAPUT International offers comprehensive construction services, from planning to execution, tailored to meet client needs and industry standards. We focus on quality, safety, and efficiency in every project, ensuring timely completion without compromising on excellence. Our commitment is to deliver infrastructure that stands the test of time.",
+        "CAPUT International (Pvt.) Ltd. offers comprehensive construction services, from planning to execution, tailored to meet client needs and industry standards. We focus on quality, safety, and efficiency in every project, ensuring timely completion without compromising on excellence. Our commitment is to deliver infrastructure that stands the test of time.",
       imageUrl: "/services/service6.webp",
     },
     {
       id: "property-advisors",
       title: "Property Advisors",
       description:
-        "As a pioneer in the real estate sector, CAPUT International has vast experience meeting the diverse needs of our clients. Based in Blue Area, Islamabad, we handle all real estate transactions and advisory services for profitable investments. Our network of investors enables us to offer the best and most cost-effective options.",
+        "As a pioneer in the real estate sector, CAPUT International (Pvt.) Ltd. has vast experience meeting the diverse needs of our client (s). Based in Blue Area, Islamabad, we handle all real estate transactions and advisory services for profitable investments. Our network of investors enables us to offer the best and most cost-effective options.",
       imageUrl: "/services/service7.webp",
     },
     {
       id: "mines-minerals",
       title: "Mines & Minerals",
       description:
-        "CAPUT International provides specialized services in the mining sector, offering solutions that encompass exploration, extraction, and processing. With a focus on sustainable practices, we ensure the responsible use of resources while maximizing client value. Our dedicated team is committed to innovation and efficiency within the mining industry.",
+        "CAPUT International (Pvt.) Ltd. provides specialized services in the mining sector, offering solutions that encompass exploration, extraction, and processing. With a focus on sustainable practices, we ensure the responsible use of resources while maximizing client (s) value. Our dedicated team is committed to innovation and efficiency within the mining industry.",
       imageUrl: "/services/service8.webp",
       subTopics: [
         {
@@ -110,13 +117,13 @@ export default function ServiceDetail() {
           id: "fuel-minerals",
           title: "Fuel Minerals",
           description:
-            "CAPUT International offers services in the exploration and development of fuel minerals, ensuring a stable and sustainable supply for energy needs.",
+            "CAPUT International (Pvt.) Ltd. offers services in the exploration and development of fuel minerals, ensuring a stable and sustainable supply for energy needs.",
         },
         {
           id: "gemstones",
           title: "Gemstones",
           description:
-            "Our gemstone division focuses on sourcing and processing precious and semi-precious stones, ensuring authenticity and quality for our clients.",
+            "Our gemstone division focuses on sourcing and processing precious and semi-precious stones, ensuring authenticity and quality for our client (s).",
         },
         {
           id: "base-metallic-minerals",
@@ -170,6 +177,11 @@ export default function ServiceDetail() {
                 <CardContent className="text-muted-foreground">
                   {subTopic.description}
                 </CardContent>
+                <CardFooter>
+                  <Button asChild>
+                    <Link to="/contact">Learn More</Link>
+                  </Button>
+                </CardFooter>
               </Card>
             ))}
           </div>

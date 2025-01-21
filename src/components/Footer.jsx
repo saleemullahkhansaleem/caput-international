@@ -22,7 +22,7 @@ export default function Footer({ setDarkMode, darkMode }) {
                     CAPUT International
                   </span>{" "}
                   <span className="text-sm md:text-base font-semibold">
-                    (Private) Limited
+                    (Pvt.) Ltd.
                   </span>
                 </div>
               </Link>
@@ -90,8 +90,8 @@ export default function Footer({ setDarkMode, darkMode }) {
         <BackToTopButton />
         <div className="mt-8 p-2 border-t border-muted-foreground/20 flex justify-between items-center text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} CAPUT International (Private)
-            Limited - All rights reserved.
+            &copy; {new Date().getFullYear()} CAPUT International (Pvt.) Ltd. -
+            All rights reserved.
           </p>
           <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
         </div>

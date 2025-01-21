@@ -53,7 +53,7 @@ export default function AboutUs() {
                 <CardContent>
                   <p className="text-lg">
                     Committed to provide unmatched assistance to our valued
-                    clients by providing customized solutions.
+                    client (s) by providing customized solutions.
                   </p>
                 </CardContent>
               </Card>
@@ -94,7 +94,7 @@ export default function AboutUs() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg mb-4">
-                    Established in 2008, CAPUT International has been on a
+                    Established in 2008, CAPUT International (Pvt.) Ltd. has been on a
                     remarkable journey of growth and excellence:
                   </p>
                   <ul className="space-y-2 text-lg">

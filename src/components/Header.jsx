@@ -19,7 +19,7 @@ const Header = ({ setDarkMode, darkMode }) => {
                 CAPUT International
               </span>{" "}
               <span className="text-sm md:text-base font-semibold">
-                (Private) Limited
+                (Pvt.) Ltd.
               </span>
             </div>
           </Link>
