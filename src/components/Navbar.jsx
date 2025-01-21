@@ -29,28 +29,28 @@ export const navigation = [
       {
         name: "Event Management",
         href: "/services/event-management",
-        subItems: [
-          {
-            name: "International Symposiums",
-            href: "/services/event-management#symposiums",
-          },
-          {
-            name: "International Conferences",
-            href: "/services/event-management#conferences",
-          },
-          {
-            name: "International Seminars",
-            href: "/services/event-management#seminars",
-          },
-          {
-            name: "Launching Ceremony",
-            href: "/services/event-management#launching-ceremony",
-          },
-          {
-            name: "Trainings/Workshops",
-            href: "/services/event-management#trainings-workshops",
-          },
-        ],
+        // subItems: [
+        //   {
+        //     name: "International Symposiums",
+        //     href: "/services/event-management#symposiums",
+        //   },
+        //   {
+        //     name: "International Conferences",
+        //     href: "/services/event-management#conferences",
+        //   },
+        //   {
+        //     name: "International Seminars",
+        //     href: "/services/event-management#seminars",
+        //   },
+        //   {
+        //     name: "Launching Ceremony",
+        //     href: "/services/event-management#launching-ceremony",
+        //   },
+        //   {
+        //     name: "Trainings/Workshops",
+        //     href: "/services/event-management#trainings-workshops",
+        //   },
+        // ],
       },
       { name: "Vendor Services", href: "/services/vendor-services" },
       {
