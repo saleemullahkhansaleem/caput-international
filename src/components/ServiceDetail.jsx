@@ -84,7 +84,7 @@ export default function ServiceDetail() {
       id: "construction",
       title: "Construction",
       description:
-        "CAPUT International (Pvt.) Ltd. offers comprehensive construction services, from planning to execution, tailored to meet client needs and industry standards. We focus on quality, safety, and efficiency in every project, ensuring timely completion without compromising on excellence. Our commitment is to deliver infrastructure that stands the test of time.",
+        "CAPUT International (Pvt.) Ltd. offers comprehensive construction services, from planning to execution, tailored to meet client (s) needs and industry standards. We focus on quality, safety, and efficiency in every project, ensuring timely completion without compromising on excellence. Our commitment is to deliver infrastructure that stands the test of time.",
       imageUrl: "/services/service6.webp",
     },
     {
