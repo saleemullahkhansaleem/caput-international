@@ -70,6 +70,14 @@ export default function Footer({ setDarkMode, darkMode }) {
               </li>
               <li>
                 <Link
+                  to="/billboards"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Our Billboards
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/gallery"
                   className="text-muted-foreground hover:text-foreground"
                 >

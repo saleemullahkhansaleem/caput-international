@@ -82,7 +82,7 @@ export default function Billboards() {
   return (
     <div className="container mx-auto px-6 py-12">
       <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-        Billboards
+        Our Billboards
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {billboards.map((billboard) => (
@@ -100,7 +100,7 @@ export default function Billboards() {
                 className="w-full h-60 object-cover rounded-md"
               />
               <p className="mt-4 text-gray-600">Size: {billboard.size}</p>
-              <Button className="mt-4 w-full" asChild> 
+              <Button className="mt-4 w-full" asChild>
                 <Link to="/contact">Contact Us for Booking</Link>
               </Button>
             </CardContent>
