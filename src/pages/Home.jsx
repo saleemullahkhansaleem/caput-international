@@ -8,6 +8,19 @@ import { Gallery } from ".";
 
 export const services = [
   {
+    title: "Branding & Advertising",
+    image: "/services/service4.webp",
+    path: "/services/branding-advertising",
+    description:
+      "Aims for client(s) growth through strategy, consulting, development, and management.",
+  },
+  {
+    title: "Construction",
+    image: "/services/service6.webp",
+    path: "/services/construction",
+    description: "Professional construction services for diverse projects.",
+  },
+  {
     title: "Event Management",
     image: "/services/service1.webp",
     path: "/services/event-management",
@@ -15,11 +28,17 @@ export const services = [
       "Provides out-of-the-box solutions, focusing on uniqueness for every client and event.",
   },
   {
-    title: "Vendor Services",
-    image: "/services/service2.webp",
-    path: "/services/vendor-services",
+    title: "Facility Management",
+    image: "/services/service5.webp",
+    path: "/services/facility-management",
     description:
-      "Offers quality and affordable delivery through direct sourcing and special relationships.",
+      "Delivers quality service with trained staff for organizational image building.",
+  },
+  {
+    title: "Mines & Minerals",
+    image: "/services/service8.webp",
+    path: "/services/mines-minerals",
+    description: "Expert consulting and management in the mining sector.",
   },
   {
     title: "Presence in Oil & Gas Sector",
@@ -29,26 +48,6 @@ export const services = [
       "Strategic operations and consulting in the oil and gas industry.",
   },
   {
-    title: "Branding & Advertising",
-    image: "/services/service4.webp",
-    path: "/services/branding-advertising",
-    description:
-      "Aims for client (s) growth through strategy, consulting, development, and management.",
-  },
-  {
-    title: "Facility Management Services",
-    image: "/services/service5.webp",
-    path: "/services/facility-management",
-    description:
-      "Delivers quality service with trained staff for organizational image building.",
-  },
-  {
-    title: "Construction",
-    image: "/services/service6.webp",
-    path: "/services/construction",
-    description: "Professional construction services for diverse projects.",
-  },
-  {
     title: "Property Advisors",
     image: "/services/service7.webp",
     path: "/services/property-advisors",
@@ -56,10 +55,11 @@ export const services = [
       "Provides real estate services, including transactions, advisory, and investment options.",
   },
   {
-    title: "Mines & Minerals",
-    image: "/services/service8.webp",
-    path: "/services/mines-minerals",
-    description: "Expert consulting and management in the mining sector.",
+    title: "Vendor Services",
+    image: "/services/service2.webp",
+    path: "/services/vendor-services",
+    description:
+      "Offers quality and affordable delivery through direct sourcing and special relationships.",
   },
 ];
 
@@ -161,6 +161,11 @@ export default function Home() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Button size="lg" asChild>
+              <Link to="/contact">Send a Message</Link>
+            </Button>
           </div>
         </div>
       </section>

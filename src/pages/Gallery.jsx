@@ -11,8 +11,8 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Using FontAwe
 
 const galleryItems = [
   {
-    title: "INTERNATIONAL SYMPOSIUM (A WATER SECURE PAKISTAN)",
-    images: ["/gallery/is1.webp", "/gallery/is2.webp", "/gallery/is3.webp"],
+    title: "Advance Training Workshop (25 – 27 March, 2019)",
+    images: ["/gallery/atw1.webp", "/gallery/atw2.webp", "/gallery/atw3.webp"],
   },
   {
     title: "CVE-2019 (REGIONAL MEDIA TRAINING)",
@@ -35,8 +35,8 @@ const galleryItems = [
     ],
   },
   {
-    title: "Advance Training Workshop (25 – 27 March, 2019)",
-    images: ["/gallery/atw1.webp", "/gallery/atw2.webp", "/gallery/atw3.webp"],
+    title: "INTERNATIONAL SYMPOSIUM (A WATER SECURE PAKISTAN)",
+    images: ["/gallery/is1.webp", "/gallery/is2.webp", "/gallery/is3.webp"],
   },
   {
     title: "Pur Azam Award Ceremony",
@@ -100,7 +100,9 @@ export default function Gallery() {
                 className="w-full aspect-square object-cover group-hover:scale-105"
               />
               <CardContent className="p-4">
-                <h3 className="text-sm md:text-base text-center font-semibold">{gallery.title}</h3>
+                <h3 className="text-sm md:text-base text-center font-semibold">
+                  {gallery.title}
+                </h3>
               </CardContent>
             </Card>
           ))}

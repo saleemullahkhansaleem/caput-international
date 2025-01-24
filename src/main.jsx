@@ -6,6 +6,7 @@ import Layout from "./Layout.jsx";
 import "@fontsource/poppins";
 import {
   AboutUs,
+  Billboards,
   ContactUs,
   EdgeMallCeremony,
   Gallery,
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "services/:serviceId",
         element: <ServiceDetail />,
+      },
+      {
+        path: "billboards",
+        element: <Billboards />,
       },
       {
         path: "gallery",

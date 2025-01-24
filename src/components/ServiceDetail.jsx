@@ -25,30 +25,28 @@ export default function ServiceDetail() {
           title: "Corporate Events",
           description:
             "Our corporate events team is dedicated to delivering professional and impactful events that resonate with your brand’s image and values. We manage everything from conferences to team-building activities, ensuring a seamless experience for your organization.",
+          href: "/contact",
         },
         {
           id: "weddings",
           title: "Weddings",
           description:
-            "We turn dream weddings into reality with our detailed planning and unique approach to each couple's needs. Our services cover everything from venue selection to décor and entertainment, making your special day unforgettable.",
+            "We turn dream weddings into reality with our detailed planning and unique approach to each couple's needs. Our services cover everything from venue selection to decor and entertainment, making your special day unforgettable.",
+          href: "/contact",
         },
         {
           id: "exhibitions",
           title: "Exhibitions",
           description:
             "Our team specializes in organizing impactful exhibitions that attract the right audience and create lasting impressions. We handle every aspect, from space design to on-ground logistics, to make sure your brand shines.",
+          href: "/contact",
         },
         {
           id: "conferences",
           title: "Conferences",
           description:
             "We organize conferences that bring together industry leaders and create an engaging platform for knowledge sharing. Our team manages speaker arrangements, logistics, and seamless execution to provide a productive environment.",
-        },
-        {
-          id: "private-parties",
-          title: "Private Parties",
-          description:
-            "From intimate gatherings to grand celebrations, we make every private event unique. Our attention to detail ensures that your personal occasions reflect your style and vision, creating memories to cherish.",
+          href: "/contact",
         },
       ],
     },
@@ -56,7 +54,7 @@ export default function ServiceDetail() {
       id: "vendor-services",
       title: "Vendor Services",
       description:
-        "With diversified experience in this field, we offer tailor-made solutions for each client. CAPUT International (Pvt.) Ltd. focuses on quality and affordability, ensuring door-step delivery within an affordable range. This is achieved through special relationships with vendors, directly sourcing quality products, and passing the savings onto our valuable client (s).",
+        "With diversified experience in this field, we offer tailor-made solutions for each client. CAPUT International (Pvt.) Ltd. focuses on quality and affordability, ensuring door-step delivery within an affordable range. This is achieved through special relationships with vendors, directly sourcing quality products, and passing the savings onto our valuable client(s).",
       imageUrl: "/services/service2.webp",
     },
     {
@@ -70,8 +68,25 @@ export default function ServiceDetail() {
       id: "branding-advertising",
       title: "Branding & Advertising",
       description:
-        "CAPUT International (Pvt.) Ltd. strives to grow together with client (s), focusing on success through brand and company transformation. We leverage strategy, consulting, development, management, and research to create impactful digital and real-world experiences. By combining our unique process and community, we build strong partnerships that drive growth.",
+        "CAPUT International (Pvt.) Ltd. strives to grow together with client(s), focusing on success through brand and company transformation. We leverage strategy, consulting, development, management, and research to create impactful digital and real-world experiences. By combining our unique process and community, we build strong partnerships that drive growth.",
       imageUrl: "/services/service4.webp",
+      subTopics: [
+        {
+          id: "outdoor-advertising",
+          title: "Outdoor Advertising",
+          description:
+            "We specialize in impactful outdoor advertising solutions, including billboards, transit ads, and other outdoor placements to enhance brand visibility.",
+          btnText: "Billboards Locations & details",
+          href: "/billboards",
+        },
+        {
+          id: "marketing-campaigns",
+          title: "Marketing Campaigns",
+          description:
+            "Our expert team creates data-driven marketing campaigns tailored to maximize reach and engagement across multiple channels.",
+          href: "/contact",
+        },
+      ],
     },
     {
       id: "facility-management",
@@ -84,52 +99,57 @@ export default function ServiceDetail() {
       id: "construction",
       title: "Construction",
       description:
-        "CAPUT International (Pvt.) Ltd. offers comprehensive construction services, from planning to execution, tailored to meet client (s) needs and industry standards. We focus on quality, safety, and efficiency in every project, ensuring timely completion without compromising on excellence. Our commitment is to deliver infrastructure that stands the test of time.",
+        "CAPUT International (Pvt.) Ltd. offers comprehensive construction services, from planning to execution, tailored to meet client(s) needs and industry standards. We focus on quality, safety, and efficiency in every project, ensuring timely completion without compromising on excellence. Our commitment is to deliver infrastructure that stands the test of time.",
       imageUrl: "/services/service6.webp",
     },
     {
       id: "property-advisors",
       title: "Property Advisors",
       description:
-        "As a pioneer in the real estate sector, CAPUT International (Pvt.) Ltd. has vast experience meeting the diverse needs of our client (s). Based in Blue Area, Islamabad, we handle all real estate transactions and advisory services for profitable investments. Our network of investors enables us to offer the best and most cost-effective options.",
+        "As a pioneer in the real estate sector, CAPUT International (Pvt.) Ltd. has vast experience meeting the diverse needs of our client(s). Based in Blue Area, Islamabad, we handle all real estate transactions and advisory services for profitable investments. Our network of investors enables us to offer the best and most cost-effective options.",
       imageUrl: "/services/service7.webp",
     },
     {
       id: "mines-minerals",
       title: "Mines & Minerals",
       description:
-        "CAPUT International (Pvt.) Ltd. provides specialized services in the mining sector, offering solutions that encompass exploration, extraction, and processing. With a focus on sustainable practices, we ensure the responsible use of resources while maximizing client (s) value. Our dedicated team is committed to innovation and efficiency within the mining industry.",
+        "CAPUT International (Pvt.) Ltd. provides specialized services in the mining sector, offering solutions that encompass exploration, extraction, and processing. With a focus on sustainable practices, we ensure the responsible use of resources while maximizing client(s) value. Our dedicated team is committed to innovation and efficiency within the mining industry.",
       imageUrl: "/services/service8.webp",
       subTopics: [
         {
           id: "construction-industrial-minerals",
-          title: "Construction And Industrial Minerals Group",
+          title: "Construction And Industrial Minerals",
           description:
             "Our team provides expertise in the construction and industrial minerals sector, ensuring the sustainable sourcing and processing of essential minerals for construction and industrial use.",
+          href: "/contact",
         },
         {
           id: "dimension-stone",
           title: "Dimension Stone",
           description:
             "We specialize in the extraction and supply of high-quality dimension stones, meeting the standards for various architectural and decorative purposes.",
+          href: "/contact",
         },
         {
           id: "fuel-minerals",
           title: "Fuel Minerals",
           description:
             "CAPUT International (Pvt.) Ltd. offers services in the exploration and development of fuel minerals, ensuring a stable and sustainable supply for energy needs.",
+          href: "/contact",
         },
         {
           id: "gemstones",
           title: "Gemstones",
           description:
-            "Our gemstone division focuses on sourcing and processing precious and semi-precious stones, ensuring authenticity and quality for our client (s).",
+            "Our gemstone division focuses on sourcing and processing precious and semi-precious stones, ensuring authenticity and quality for our client(s).",
+          href: "/contact",
         },
         {
           id: "base-metallic-minerals",
-          title: "Base/ Metallic Minerals Group",
+          title: "Base/ Metallic Minerals",
           description:
             "With a focus on base and metallic minerals, we offer extraction and processing solutions that meet industry standards for a wide range of applications.",
+          href: "/contact",
         },
       ],
     },
@@ -179,7 +199,9 @@ export default function ServiceDetail() {
                 </CardContent>
                 <CardFooter>
                   <Button asChild>
-                    <Link to="/contact">Learn More</Link>
+                    <Link to={subTopic.href || "/contact"}>
+                      {subTopic.btnText || "Learn More"}
+                    </Link>
                   </Button>
                 </CardFooter>
               </Card>

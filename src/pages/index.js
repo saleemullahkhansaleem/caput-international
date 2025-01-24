@@ -6,6 +6,15 @@ import ContactUs from "./ContactUs";
 
 // Importing service components
 import EdgeMallCeremony from "./EdgeMallCeremony";
+import Billboards from "./Billboards";
 
 // Exporting components
-export { Home, NotFound, AboutUs, Gallery, ContactUs, EdgeMallCeremony };
+export {
+  Home,
+  NotFound,
+  AboutUs,
+  Gallery,
+  ContactUs,
+  EdgeMallCeremony,
+  Billboards,
+};

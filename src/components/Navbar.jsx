@@ -27,69 +27,28 @@ export const navigation = [
         href: "/edge-mall-ceremony",
       },
       {
+        name: "Branding & Advertising",
+        href: "/services/branding-advertising",
+      },
+      { name: "Construction", href: "/services/construction" },
+      {
         name: "Event Management",
         href: "/services/event-management",
-        // subItems: [
-        //   {
-        //     name: "International Symposiums",
-        //     href: "/services/event-management#symposiums",
-        //   },
-        //   {
-        //     name: "International Conferences",
-        //     href: "/services/event-management#conferences",
-        //   },
-        //   {
-        //     name: "International Seminars",
-        //     href: "/services/event-management#seminars",
-        //   },
-        //   {
-        //     name: "Launching Ceremony",
-        //     href: "/services/event-management#launching-ceremony",
-        //   },
-        //   {
-        //     name: "Trainings/Workshops",
-        //     href: "/services/event-management#trainings-workshops",
-        //   },
-        // ],
       },
-      { name: "Vendor Services", href: "/services/vendor-services" },
+      {
+        name: "Facility Management",
+        href: "/services/facility-management",
+      },
+      {
+        name: "Mines & Minerals",
+        href: "/services/mines-minerals",
+      },
       {
         name: "Presence in Oil & Gas Sector",
         href: "/services/oil-gas-sector",
       },
-      {
-        name: "Branding & Advertising",
-        href: "/services/branding-advertising",
-      },
-      {
-        name: "Facility Management Services",
-        href: "/services/facility-management",
-      },
-      { name: "Construction", href: "/services/construction" },
       { name: "Property Advisors", href: "/services/property-advisors" },
-      {
-        name: "Mines & Minerals",
-        href: "/services/mines-minerals",
-        // subItems: [
-        //   {
-        //     name: "Construction And Industrial Minerals Group",
-        //     href: "/services/mines-minerals#construction-industrial",
-        //   },
-        //   {
-        //     name: "Dimension Stone",
-        //     href: "/services/mines-minerals#dimension-stone",
-        //   },
-        //   {
-        //     name: "Fuel Minerals",
-        //     href: "/services/mines-minerals#fuel-minerals",
-        //   },
-        //   { name: "Gemstones", href: "/services/mines-minerals#gemstones" },
-        //   {
-        //     name: "Base/ Metallic Minerals Group",
-        //     href: "/services/mines-minerals#base-metallic",
-        //   },
-        // ],
-      },
+      { name: "Vendor Services", href: "/services/vendor-services" },
     ],
   },
   { name: "Gallery", href: "/gallery" },
