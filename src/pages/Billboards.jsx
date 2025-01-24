@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const billboards = [
   {
@@ -99,7 +100,9 @@ export default function Billboards() {
                 className="w-full h-60 object-cover rounded-md"
               />
               <p className="mt-4 text-gray-600">Size: {billboard.size}</p>
-              <Button className="mt-4 w-full">View Details</Button>
+              <Button className="mt-4 w-full" asChild> 
+                <Link to="/contact">Contact Us for Booking</Link>
+              </Button>
             </CardContent>
           </Card>
         ))}
