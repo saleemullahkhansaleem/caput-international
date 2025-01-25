@@ -19,6 +19,14 @@ export default function ServiceDetail() {
       description:
         "CAPUT International (Pvt.) Ltd. has come a long way by steadily increasing its satisfied clientele base through providing out-of-the-box solutions. Our creative team, being well-versed with the market pulse, ensures that dreams come true for every client. As the premier event planning and management company in Pakistan, we consider every client and event 'UNIQUE'.",
       imageUrl: "/services/service1.webp",
+      deliveredProjects: [
+        {
+          title: "Launching Ceremony of the Edge Mall - Faisalabad",
+          description:
+            "CAPUT International (Pvt.) Ltd. organized the launching ceremony of the Edge Mall in Faisalabad, a prestigious event attended by industry leaders and dignitaries. The event showcased the mall’s unique features and offerings, creating a memorable experience for all attendees.",
+          href: "/edge-mall-ceremony",
+        },
+      ],
       subTopics: [
         {
           id: "corporate-events",
@@ -180,6 +188,36 @@ export default function ServiceDetail() {
         </div>
       </div>
 
+      {/* Render Delivered Projects if available, each within a Card */}
+      {serviceData.deliveredProjects && (
+        <div className="mt-16 space-y-8">
+          <h3 className="text-2xl font-semibold text-primary mb-6">
+            Our Delivered Projects
+          </h3>
+          <div className="grid gap-8">
+            {serviceData.deliveredProjects.map((item) => (
+              <Card key={item.id} className="bg-primary/10">
+                <CardHeader>
+                  <CardTitle className="font-semibold text-lg">
+                    {item.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground">
+                  {item.description}
+                </CardContent>
+                <CardFooter>
+                  <Button asChild>
+                    <Link to={item.href || "/contact"}>
+                      {item.btnText || "View Highlights"}
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Render subtopics if available, each within a Card */}
       {serviceData.subTopics && (
         <div className="mt-16 space-y-8">
@@ -188,9 +226,9 @@ export default function ServiceDetail() {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {serviceData.subTopics.map((subTopic) => (
-              <Card key={subTopic.id} className="">
+              <Card key={subTopic.id} className="bg-muted">
                 <CardHeader>
-                  <CardTitle className="font-semibold text-lg mb-2">
+                  <CardTitle className="font-semibold text-lg">
                     {subTopic.title}
                   </CardTitle>
                 </CardHeader>

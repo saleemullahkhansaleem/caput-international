@@ -14,12 +14,12 @@ export const services = [
     description:
       "Aims for client(s) growth through strategy, consulting, development, and management.",
   },
-  {
-    title: "Construction",
-    image: "/services/service6.webp",
-    path: "/services/construction",
-    description: "Professional construction services for diverse projects.",
-  },
+  // {
+  //   title: "Construction",
+  //   image: "/services/service6.webp",
+  //   path: "/services/construction",
+  //   description: "Professional construction services for diverse projects.",
+  // },
   {
     title: "Event Management",
     image: "/services/service1.webp",
@@ -40,13 +40,13 @@ export const services = [
     path: "/services/mines-minerals",
     description: "Expert consulting and management in the mining sector.",
   },
-  {
-    title: "Presence in Oil & Gas Sector",
-    image: "/services/service3.webp",
-    path: "/services/oil-gas-sector",
-    description:
-      "Strategic operations and consulting in the oil and gas industry.",
-  },
+  // {
+  //   title: "Presence in Oil & Gas Sector",
+  //   image: "/services/service3.webp",
+  //   path: "/services/oil-gas-sector",
+  //   description:
+  //     "Strategic operations and consulting in the oil and gas industry.",
+  // },
   {
     title: "Property Advisors",
     image: "/services/service7.webp",
@@ -94,7 +94,7 @@ export default function Home() {
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card
                 key={index}
