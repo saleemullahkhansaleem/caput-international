@@ -11,7 +11,7 @@ import {
 import Slider from "react-slick";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
-import { Fullscreen, ZoomIn } from "lucide-react";
+import { Expand, Fullscreen, ZoomIn } from "lucide-react";
 
 const billboards = [
   {
@@ -140,7 +140,7 @@ export default function Billboards() {
                   className=" w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 hidden group-hover:flex items-center justify-center bg-black/40 backdrop-blur-sm">
-                  <Fullscreen size={40} className="text-white" />
+                  <Expand size={28} className="text-white" />
                 </div>
               </div>
               <p className="mt-4 text-muted-foreground">
