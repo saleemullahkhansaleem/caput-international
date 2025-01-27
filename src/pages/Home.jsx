@@ -139,7 +139,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12">Contact Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {contactData.map((item, index) => (
-              <Card key={index} className="text-center relative group">
+              <Card key={index} className="text-center relative group bg-muted border-none shadow-none">
                 {item.link && (
                   <a href={item.link} className="absolute inset-0"></a>
                 )}

@@ -13,6 +13,7 @@ import ServiceDetail from "./ServiceDetail";
 
 import VideoSection from "./VideoSection";
 import HighlightedEvent from "./HighlightedEvent";
+import CorporateGifts from "./CorporateGifts";
 
 export {
   ThemeToggle,
@@ -29,4 +30,5 @@ export {
   //   Home
   VideoSection,
   HighlightedEvent,
+  CorporateGifts,
 };

@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Link, useParams } from "react-router-dom";
 import { Button } from "./ui/button";
+import { CorporateGifts } from ".";
 
 export default function ServiceDetail() {
   const { serviceId } = useParams();
@@ -29,31 +30,45 @@ export default function ServiceDetail() {
       ],
       subTopics: [
         {
+          id: "sales-event",
+          title: "Sales Event",
+          description:
+            "Our sales events are designed to create impactful brand engagements and maximize customer interaction. From product promotions to exclusive deals, we ensure a successful and result-driven event.",
+          href: "/contact",
+        },
+        {
+          id: "expos-exhibition",
+          title: "Expos & Exhibition",
+          description:
+            "We specialize in organizing high-profile expos and exhibitions that connect businesses with their target audience. Our team handles logistics, booth designs, and audience engagement strategies.",
+          href: "/contact",
+        },
+        {
+          id: "launch-events",
+          title: "Launch Events",
+          description:
+            "From product launches to grand openings, we create memorable launch events that leave a lasting impact. Our experts manage the event flow, branding, and media coverage to ensure success.",
+          href: "/contact",
+        },
+        {
           id: "corporate-events",
           title: "Corporate Events",
           description:
-            "Our corporate events team is dedicated to delivering professional and impactful events that resonate with your brand’s image and values. We manage everything from conferences to team-building activities, ensuring a seamless experience for your organization.",
+            "Our corporate events team delivers professional and high-impact experiences, including conferences, team-building activities, and networking sessions, ensuring seamless execution aligned with your brand’s values.",
           href: "/contact",
         },
         {
-          id: "weddings",
-          title: "Weddings",
+          id: "tech-events",
+          title: "Tech Events",
           description:
-            "We turn dream weddings into reality with our detailed planning and unique approach to each couple's needs. Our services cover everything from venue selection to decor and entertainment, making your special day unforgettable.",
-          href: "/contact",
-        },
-        {
-          id: "exhibitions",
-          title: "Exhibitions",
-          description:
-            "Our team specializes in organizing impactful exhibitions that attract the right audience and create lasting impressions. We handle every aspect, from space design to on-ground logistics, to make sure your brand shines.",
+            "We organize cutting-edge tech events that bring together industry innovators, startups, and tech enthusiasts. Our services include speaker coordination, exhibition setups, and immersive tech experiences.",
           href: "/contact",
         },
         {
           id: "conferences",
           title: "Conferences",
           description:
-            "We organize conferences that bring together industry leaders and create an engaging platform for knowledge sharing. Our team manages speaker arrangements, logistics, and seamless execution to provide a productive environment.",
+            "We plan and execute conferences that bring together thought leaders, professionals, and industry experts. From logistics to speaker arrangements, we ensure a seamless experience.",
           href: "/contact",
         },
       ],
@@ -62,9 +77,41 @@ export default function ServiceDetail() {
       id: "vendor-services",
       title: "Vendor Services",
       description:
-        "With diversified experience in this field, we offer tailor-made solutions for each client. CAPUT International (Pvt.) Ltd. focuses on quality and affordability, ensuring door-step delivery within an affordable range. This is achieved through special relationships with vendors, directly sourcing quality products, and passing the savings onto our valuable client(s).",
+        "With diversified experience in this field, we offer tailor-made solutions for each client. CAPUT International (Pvt.) Ltd. focuses on quality and affordability, ensuring doorstep delivery within an affordable range. This is achieved through special relationships with vendors, directly sourcing quality products, and passing the savings onto our valuable clients.",
       imageUrl: "/services/service2.webp",
+      // deliveredProjects: [
+      //   {
+      //     title: "Corporate Branding for MOLGroup",
+      //     description:
+      //       "CAPUT International (Pvt.) Ltd. successfully executed corporate branding for MOLGroup, including printed vinyl signage, promotional brochures, and customized stationery. The project helped enhance brand visibility and market presence.",
+      //     href: "/corporate-gifts",
+      //   },
+      // ],
+      subTopics: [
+        {
+          id: "printing-solutions",
+          title: "Printing Solutions",
+          description:
+            "We offer high-quality digital and offset printing services, including Pena Flex, vinyl prints, brochures, and invitation cards, ensuring vibrant and durable results.",
+          href: "/contact",
+        },
+        {
+          id: "corporate-branding",
+          title: "Corporate Branding",
+          description:
+            "Enhance your brand’s visibility with customized promotional items such as printed pens, cups, tea coasters, and envelopes tailored to your needs.",
+          href: "/contact",
+        },
+        {
+          id: "premium-packaging",
+          title: "Premium Packaging",
+          description:
+            "We specialize in elegant packaging solutions, including velvet boxes, lacquer-coated finishes, and crystal plaques for gifts, awards, and corporate events.",
+          href: "/contact",
+        },
+      ],
     },
+
     {
       id: "oil-gas-sector",
       title: "Presence in Oil & Gas Sector",
@@ -196,7 +243,7 @@ export default function ServiceDetail() {
           </h3>
           <div className="grid gap-8">
             {serviceData.deliveredProjects.map((item) => (
-              <Card key={item.id} className="bg-primary/10">
+              <Card key={item.title} className="bg-primary/10">
                 <CardHeader>
                   <CardTitle className="font-semibold text-lg">
                     {item.title}
@@ -247,6 +294,8 @@ export default function ServiceDetail() {
           </div>
         </div>
       )}
+
+      {serviceId === "vendor-services" && <CorporateGifts />}
     </section>
   ) : (
     <section className="container mx-auto py-16 px-6 lg:px-8 text-center">
