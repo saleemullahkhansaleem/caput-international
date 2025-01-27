@@ -315,7 +315,7 @@ export default function ServiceDetail() {
           <h3 className="text-2xl font-semibold text-primary mb-6">
             {serviceData.title} Services
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {serviceData.subTopics.map((subTopic) => (
               <Card
                 key={subTopic.id}
