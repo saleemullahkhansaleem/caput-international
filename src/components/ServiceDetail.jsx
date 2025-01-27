@@ -75,18 +75,10 @@ export default function ServiceDetail() {
     },
     {
       id: "vendor-services",
-      title: "Vendor Services",
+      title: "Vendor",
       description:
         "With diversified experience in this field, we offer tailor-made solutions for each client. CAPUT International (Pvt.) Ltd. focuses on quality and affordability, ensuring doorstep delivery within an affordable range. This is achieved through special relationships with vendors, directly sourcing quality products, and passing the savings onto our valuable clients.",
       imageUrl: "/services/service2.webp",
-      // deliveredProjects: [
-      //   {
-      //     title: "Corporate Branding for MOLGroup",
-      //     description:
-      //       "CAPUT International (Pvt.) Ltd. successfully executed corporate branding for MOLGroup, including printed vinyl signage, promotional brochures, and customized stationery. The project helped enhance brand visibility and market presence.",
-      //     href: "/corporate-gifts",
-      //   },
-      // ],
       subTopics: [
         {
           id: "printing-solutions",
@@ -145,11 +137,63 @@ export default function ServiceDetail() {
     },
     {
       id: "facility-management",
-      title: "Facility Management Services",
+      title: "Facility Management",
       description:
-        "CAPUT International (Pvt.) Ltd. provides effective, professional, and courteous service management. Our mission is to deliver the highest level of service in a cost-effective manner, minimizing risks factor. Our trained and courteous workforce enhances the image of your organization, embodying our principle of 'Growing Together.'",
+        "CAPUT International (Pvt.) Ltd. provides effective, professional, and courteous service management. Our mission is to deliver the highest level of service in a cost-effective manner, minimizing risk factors. Our trained and courteous workforce enhances the image of your organization, embodying our principle of 'Growing Together.'",
       imageUrl: "/services/service5.webp",
+      subTopics: [
+        {
+          id: "cleaning-services",
+          title: "Cleaning Services",
+          description:
+            "We provide professional cleaning services for offices, commercial spaces, and residential properties, ensuring a hygienic and well-maintained environment.",
+          href: "/contact",
+        },
+        {
+          id: "maintenance-repair",
+          title: "Maintenance & Repair Services",
+          description:
+            "Our team offers reliable maintenance and repair solutions to keep your facilities in top condition, reducing downtime and operational disruptions.",
+          href: "/contact",
+        },
+        {
+          id: "grounds-maintenance",
+          title: "Grounds Maintenance",
+          description:
+            "We ensure that outdoor spaces, landscapes, and surrounding areas remain clean, well-kept, and visually appealing to enhance your property's image.",
+          href: "/contact",
+        },
+        {
+          id: "waste-management",
+          title: "Waste Management",
+          description:
+            "Our waste management services include responsible disposal, recycling solutions, and sustainability-focused waste reduction strategies.",
+          href: "/contact",
+        },
+        {
+          id: "pest-control",
+          title: "Pest Control",
+          description:
+            "We offer effective pest control solutions to safeguard your premises from infestations, ensuring a safe and healthy working environment.",
+          href: "/contact",
+        },
+        {
+          id: "hvac-maintenance",
+          title: "HVAC System Maintenance",
+          description:
+            "Our HVAC maintenance services ensure optimal performance, energy efficiency, and longevity of your heating, ventilation, and air conditioning systems.",
+          href: "/contact",
+        },
+        {
+          id: "front-of-house-services",
+          title: "Front-of-House Services",
+          description:
+            "We provide trained front-desk and reception staff to offer exceptional customer service, enhancing your organization’s first impression.",
+          href: "/contact",
+        },
+      ],
     },
+
     {
       id: "construction",
       title: "Construction",
@@ -273,7 +317,10 @@ export default function ServiceDetail() {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {serviceData.subTopics.map((subTopic) => (
-              <Card key={subTopic.id} className="bg-muted border-none shadow-none">
+              <Card
+                key={subTopic.id}
+                className="bg-muted border-none shadow-none"
+              >
                 <CardHeader>
                   <CardTitle className="font-semibold text-lg">
                     {subTopic.title}
