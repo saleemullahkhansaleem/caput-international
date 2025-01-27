@@ -273,7 +273,7 @@ export default function ServiceDetail() {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {serviceData.subTopics.map((subTopic) => (
-              <Card key={subTopic.id} className="bg-muted">
+              <Card key={subTopic.id} className="bg-muted border-none shadow-none">
                 <CardHeader>
                   <CardTitle className="font-semibold text-lg">
                     {subTopic.title}

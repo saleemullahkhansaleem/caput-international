@@ -52,20 +52,18 @@ export default function CorporateGifts() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 w-full container">
         {corporateGifts.map((gift) => (
-          <Card
+          <div
             key={gift.title}
-            className="overflow-hidden flex flex-col justify-between rounded-non"
+            className="overflow-hidden flex flex-col justify-between rounded-none bg-primary/10 border-none shadow-none"
           >
-            <CardHeader>
-              <CardTitle>{gift.title}</CardTitle>
-            </CardHeader>
+            <h3 className="p-4 font-semibold">{gift.title}</h3>
             <img
               // src="https://placehold.co/400"
               src={`/corporate-gifts/${gift.image}`}
               alt={gift.title}
               className="w-full h-60 object-cover"
             />
-          </Card>
+          </div>
         ))}
       </div>
     </div>

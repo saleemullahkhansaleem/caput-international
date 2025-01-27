@@ -57,7 +57,7 @@ export default function ContactUs() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {contactData.map((item, index) => (
-            <Card key={index} className="text-center relative group">
+            <Card key={index} className="text-center relative group bg-muted border-none shadow-none">
               {item.link && (
                 <a href={item.link} className="absolute inset-0"></a>
               )}
