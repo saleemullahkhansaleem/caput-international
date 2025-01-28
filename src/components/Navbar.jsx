@@ -47,7 +47,7 @@ export const navigation = [
       //   name: "Presence in Oil & Gas Sector",
       //   href: "/services/oil-gas-sector",
       // },
-      { name: "Property Advisors", href: "/services/property-advisors" },
+      // { name: "Property Advisors", href: "/services/property-advisors" },
       { name: "Vendor Services", href: "/services/vendor-services" },
     ],
   },
