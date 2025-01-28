@@ -85,7 +85,7 @@ export default function Gallery() {
     <section className="py-12">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-bold text-center mb-12">Our Gallery</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {galleryItems.map((gallery, index) => (
             <Card
               key={index}
