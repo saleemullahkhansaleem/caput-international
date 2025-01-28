@@ -47,13 +47,13 @@ export const services = [
   //   description:
   //     "Strategic operations and consulting in the oil and gas industry.",
   // },
-  {
-    title: "Property Advisors",
-    image: "/services/service7.webp",
-    path: "/services/property-advisors",
-    description:
-      "Provides real estate services, including transactions, advisory, and investment options.",
-  },
+  // {
+  //   title: "Property Advisors",
+  //   image: "/services/service7.webp",
+  //   path: "/services/property-advisors",
+  //   description:
+  //     "Provides real estate services, including transactions, advisory, and investment options.",
+  // },
   {
     title: "Vendor Services",
     image: "/services/service2.webp",
@@ -139,7 +139,10 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12">Contact Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {contactData.map((item, index) => (
-              <Card key={index} className="text-center relative group bg-muted border-none shadow-none">
+              <Card
+                key={index}
+                className="text-center relative group bg-muted border-none shadow-none"
+              >
                 {item.link && (
                   <a href={item.link} className="absolute inset-0"></a>
                 )}
