@@ -84,7 +84,7 @@ const videos = [
 
 export default function VideoGallery() {
   const [currentVideo, setCurrentVideo] = useState(null);
-  const [isLoading, setIsLoading] = useState(false); // Loading state
+  const [isLoading, setIsLoading] = useState(true); // Loading state
 
   const handleVideoClick = (videoUrl) => {
     setIsLoading(true); // Start loading
