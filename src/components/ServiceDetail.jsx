@@ -75,7 +75,7 @@ export default function ServiceDetail() {
     },
     {
       id: "vendor-services",
-      title: "Vendor",
+      title: "Vendor Services",
       description:
         "With diversified experience in this field, we offer tailor-made solutions for each client. CAPUT International (Pvt.) Ltd. focuses on quality and affordability, ensuring doorstep delivery within an affordable range. This is achieved through special relationships with vendors, directly sourcing quality products, and passing the savings onto our valuable clients.",
       imageUrl: "/services/service2.webp",
@@ -313,7 +313,8 @@ export default function ServiceDetail() {
       {serviceData.subTopics && (
         <div className="mt-16 space-y-8">
           <h3 className="text-2xl font-semibold text-primary mb-6">
-            {serviceData.title} Services
+            Our {serviceData.title}{" "}
+            {serviceId !== "vendor-services" && "Services"}
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {serviceData.subTopics.map((subTopic) => (
