@@ -52,7 +52,7 @@ const videos = [
   {
     id: "7",
     title:
-      "Unveiling of The Egde Mall, Faisalabad by Haji Javed Iqbal Qaiser, Group Head Go Petroleum & Sitara Heights",
+      "Unveiling of The Edge Mall, Faisalabad by Haji Javed Iqbal Qaiser, Group Head Go Petroleum & Sitara Heights",
     thumbnail: "/edge-mall/v7.webp",
     videoUrl: "https://www.youtube.com/embed/3KT2jXIBO5k?si=-e_4FE7rQfaxl_M4",
   },

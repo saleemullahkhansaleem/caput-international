@@ -24,7 +24,7 @@ const galleryItems = [
     ],
   },
   {
-    title: "ICMC-2019 (INTERNATIONAL CONFRENCE ON MEDIA CONFLICT)",
+    title: "ICMC-2019 (INTERNATIONAL CONFERENCE ON MEDIA CONFLICT)",
     images: [
       "/gallery/icmc1.webp",
       "/gallery/icmc2.webp",
