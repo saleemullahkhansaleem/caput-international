@@ -59,7 +59,7 @@ export default function CorporateGifts() {
             <h3 className="p-4 font-semibold">{gift.title}</h3>
             <img
               // src="https://placehold.co/400"
-              src={`/corporate-gifts/${gift.image}`}
+              src={`/images/corporate-gifts/${gift.image}`}
               alt={gift.title}
               className="w-full h-60 object-cover"
             />

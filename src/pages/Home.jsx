@@ -9,54 +9,54 @@ import { Gallery } from ".";
 export const services = [
   {
     title: "Branding & Advertising",
-    image: "/services/service4.webp",
+    image: "/images/services/service4.webp",
     path: "/services/branding-advertising",
     description:
       "Aims for client(s) growth through strategy, consulting, development, and management.",
   },
   // {
   //   title: "Construction",
-  //   image: "/services/service6.webp",
+  //   image: "/images/services/service6.webp",
   //   path: "/services/construction",
   //   description: "Professional construction services for diverse projects.",
   // },
   {
     title: "Event Management",
-    image: "/services/service1.webp",
+    image: "/images/services/service1.webp",
     path: "/services/event-management",
     description:
       "Provides out-of-the-box solutions, focusing on uniqueness for every client and event.",
   },
   {
     title: "Facility Management",
-    image: "/services/service5.webp",
+    image: "/images/services/service5.webp",
     path: "/services/facility-management",
     description:
       "Delivers quality service with trained staff for organizational image building.",
   },
   {
     title: "Mines & Minerals",
-    image: "/services/service8.webp",
+    image: "/images/services/service8.webp",
     path: "/services/mines-minerals",
     description: "Expert consulting and management in the mining sector.",
   },
   // {
   //   title: "Presence in Oil & Gas Sector",
-  //   image: "/services/service3.webp",
+  //   image: "/images/services/service3.webp",
   //   path: "/services/oil-gas-sector",
   //   description:
   //     "Strategic operations and consulting in the oil and gas industry.",
   // },
   // {
   //   title: "Property Advisors",
-  //   image: "/services/service7.webp",
+  //   image: "/images/services/service7.webp",
   //   path: "/services/property-advisors",
   //   description:
   //     "Provides real estate services, including transactions, advisory, and investment options.",
   // },
   {
     title: "Vendor Services",
-    image: "/services/service2.webp",
+    image: "/images/services/service2.webp",
     path: "/services/vendor-services",
     description:
       "Offers quality and affordable delivery through direct sourcing and special relationships.",

@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -7,77 +6,77 @@ import {
 } from "@/components/ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { useState } from "react";
-import { FaPlay, FaYoutube } from "react-icons/fa";
-import { ImSpinner8 } from "react-icons/im"; // Import a spinner icon
+import { FaPlay } from "react-icons/fa";
+import { ImSpinner8 } from "react-icons/im";
 
 const videos = [
   {
     id: "1",
     title: "Recitation of Holy Quran, Naat Shareef & Sufi Qalam",
-    thumbnail: "/edge-mall/v1.webp",
+    thumbnail: "/images/edge-mall/v1.webp",
     videoUrl: "https://www.youtube.com/embed/diD3RL6iG6w?si=stT7_nT5AR-rDMtI",
   },
   {
     id: "2",
     title: "Mr. Tasneem Sabri Welcoming the Guests",
-    thumbnail: "/edge-mall/v2.webp",
+    thumbnail: "/images/edge-mall/v2.webp",
     videoUrl: "https://www.youtube.com/embed/1qojKO7ohHA?si=zxCOonj71yEdxiaA",
   },
   {
     id: "3",
     title:
       "Presentation of Mr. Zeeshan Tayyab, COO, Go Petroleum & Sitara Heights",
-    thumbnail: "/edge-mall/v3.webp",
+    thumbnail: "/images/edge-mall/v3.webp",
     videoUrl: "https://www.youtube.com/embed/Q04VLVV4w3g?si=EtOnYk2Z82Jc0OD_",
   },
   {
     id: "4",
     title: "Presentation of Architect Mr. Jamshed Khan",
-    thumbnail: "/edge-mall/v4.webp",
+    thumbnail: "/images/edge-mall/v4.webp",
     videoUrl: "https://www.youtube.com/embed/_IVCPgzvSRo?si=dEbP4lmPbuv-946O",
   },
   {
     id: "5",
     title:
       "Presentation of Sheikh Shuja Ullah Khan, Senior Director & M/S Muzaffar Majeed, Regional Head & Asad Saleem, Regional Sales Manager Zameen.com",
-    thumbnail: "/edge-mall/v5.webp",
+    thumbnail: "/images/edge-mall/v5.webp",
     videoUrl: "https://www.youtube.com/embed/n-o1q2QHBwM?si=qkIDkV1PW0Yiuy-Y",
   },
   {
     id: "6",
     title: "Mr. Mazhar Abbas addressing the Ceremony",
-    thumbnail: "/edge-mall/v6.webp",
+    thumbnail: "/images/edge-mall/v6.webp",
     videoUrl: "https://www.youtube.com/embed/kihcuYNGVwE?si=sIM3Aq1bk084znak",
   },
   {
     id: "7",
     title:
       "Unveiling of The Edge Mall, Faisalabad by Haji Javed Iqbal Qaiser, Group Head Go Petroleum & Sitara Heights",
-    thumbnail: "/edge-mall/v7.webp",
+    thumbnail: "/images/edge-mall/v7.webp",
     videoUrl: "https://www.youtube.com/embed/3KT2jXIBO5k?si=-e_4FE7rQfaxl_M4",
   },
   {
     id: "8",
     title: "Performance of Sher Ali & Mehr Ali Qawal",
-    thumbnail: "/edge-mall/v8.webp",
+    thumbnail: "/images/edge-mall/v8.webp",
     videoUrl: "https://www.youtube.com/embed/hT8yMYsix64?si=p9vCt81M5dSKIfYB",
   },
   {
     id: "9",
     title: "Performance of Nadeem Abbas Lunewala",
-    thumbnail: "/edge-mall/v9.webp",
+    thumbnail: "/images/edge-mall/v9.webp",
     videoUrl: "https://www.youtube.com/embed/auA4EjIgpys?si=T1dkDxfarpbiKNrX",
   },
   {
     id: "10",
     title: "Performance of Ali Abbas & Minahail",
-    thumbnail: "/edge-mall/v10.webp",
+    thumbnail: "/images/edge-mall/v10.webp",
     videoUrl: "https://www.youtube.com/embed/HvjfpY19iYE?si=aQX7uVEAdNaWGtpk",
   },
   {
     id: "11",
     title: "Performance of Salman Amin",
-    thumbnail: "/edge-mall/v11.webp",
+    thumbnail: "/images/edge-mall/v11.webp",
     videoUrl: "https://www.youtube.com/embed/SpkYUn_5saA?si=s0gc1oRLSd2QPubx",
   },
 ];

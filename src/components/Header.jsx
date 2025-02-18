@@ -9,7 +9,7 @@ const Header = ({ setDarkMode, darkMode }) => {
         <div className="text-foreground">
           <Link to="/" className="flex items-end gap-2">
             <img
-              src="/logo.png"
+              src="/images/logo.png"
               alt="logo"
               height={100}
               className="h-12 md:h-16"

@@ -19,7 +19,7 @@ export default function ServiceDetail() {
       title: "Event Management",
       description:
         "CAPUT International (Pvt.) Ltd. has come a long way by steadily increasing its satisfied clientele base through providing out-of-the-box solutions. Our creative team, being well-versed with the market pulse, ensures that dreams come true for every client. As the premier event planning and management company in Pakistan, we consider every client and event 'UNIQUE'.",
-      imageUrl: "/services/service1.webp",
+      imageUrl: "/images/services/service1.webp",
       deliveredProjects: [
         {
           title: "Launching Ceremony of the Edge Mall - Faisalabad",
@@ -78,7 +78,7 @@ export default function ServiceDetail() {
       title: "Vendor Services",
       description:
         "With diversified experience in this field, we offer tailor-made solutions for each client. CAPUT International (Pvt.) Ltd. focuses on quality and affordability, ensuring doorstep delivery within an affordable range. This is achieved through special relationships with vendors, directly sourcing quality products, and passing the savings onto our valuable clients.",
-      imageUrl: "/services/service2.webp",
+      imageUrl: "/images/services/service2.webp",
       subTopics: [
         {
           id: "printing-solutions",
@@ -109,14 +109,14 @@ export default function ServiceDetail() {
       title: "Presence in Oil & Gas Sector",
       description:
         "CAPUT International (Pvt.) Ltd. is actively engaged in the Oil & Gas sector, offering expertise and solutions tailored for industry demands. We focus on operational efficiency, safety, and quality, ensuring our services support the sector’s rigorous standards. Our presence in this sector underscores our commitment to serve critical industries with precision and excellence.",
-      imageUrl: "/services/service3.webp",
+      imageUrl: "/images/services/service3.webp",
     },
     {
       id: "branding-advertising",
       title: "Branding & Advertising",
       description:
         "CAPUT International (Pvt.) Ltd. strives to grow together with client(s), focusing on success through brand and company transformation. We leverage strategy, consulting, development, management, and research to create impactful digital and real-world experiences. By combining our unique process and community, we build strong partnerships that drive growth.",
-      imageUrl: "/services/service4.webp",
+      imageUrl: "/images/services/service4.webp",
       subTopics: [
         {
           id: "outdoor-advertising",
@@ -140,7 +140,7 @@ export default function ServiceDetail() {
       title: "Facility Management",
       description:
         "CAPUT International (Pvt.) Ltd. provides effective, professional, and courteous service management. Our mission is to deliver the highest level of service in a cost-effective manner, minimizing risk factors. Our trained and courteous workforce enhances the image of your organization, embodying our principle of 'Growing Together.'",
-      imageUrl: "/services/service5.webp",
+      imageUrl: "/images/services/service5.webp",
       subTopics: [
         {
           id: "cleaning-services",
@@ -199,21 +199,21 @@ export default function ServiceDetail() {
       title: "Construction",
       description:
         "CAPUT International (Pvt.) Ltd. offers comprehensive construction services, from planning to execution, tailored to meet client(s) needs and industry standards. We focus on quality, safety, and efficiency in every project, ensuring timely completion without compromising on excellence. Our commitment is to deliver infrastructure that stands the test of time.",
-      imageUrl: "/services/service6.webp",
+      imageUrl: "/images/services/service6.webp",
     },
     {
       id: "property-advisors",
       title: "Property Advisors",
       description:
         "As a pioneer in the real estate sector, CAPUT International (Pvt.) Ltd. has vast experience meeting the diverse needs of our client(s). Based in Blue Area, Islamabad, we handle all real estate transactions and advisory services for profitable investments. Our network of investors enables us to offer the best and most cost-effective options.",
-      imageUrl: "/services/service7.webp",
+      imageUrl: "/images/services/service7.webp",
     },
     {
       id: "mines-minerals",
       title: "Mines & Minerals",
       description:
         "CAPUT International (Pvt.) Ltd. provides specialized services in the mining sector, offering solutions that encompass exploration, extraction, and processing. With a focus on sustainable practices, we ensure the responsible use of resources while maximizing client(s) value. Our dedicated team is committed to innovation and efficiency within the mining industry.",
-      imageUrl: "/services/service8.webp",
+      imageUrl: "/images/services/service8.webp",
       subTopics: [
         {
           id: "construction-industrial-minerals",
