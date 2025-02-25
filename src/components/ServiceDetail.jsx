@@ -8,6 +8,7 @@ import {
 import { Link, useParams } from "react-router-dom";
 import { Button } from "./ui/button";
 import { CorporateGifts } from ".";
+import { Helmet } from "react-helmet-async";
 
 export default function ServiceDetail() {
   const { serviceId } = useParams();
@@ -258,6 +259,20 @@ export default function ServiceDetail() {
 
   return serviceData ? (
     <section className="container mx-auto py-16 px-6 lg:px-8">
+      <Helmet>
+        <title>
+          {serviceData.title} - CAPUT International (Pvt.) Ltd. | Global Leader
+          in Premium Solutions
+        </title>
+        <meta
+          name="description"
+          content={`${serviceData.description} We are a leading company providing innovative solutions across various industries. Our commitment to excellence and customer satisfaction sets us apart.`}
+        />
+        <meta
+          name="keywords"
+          content="minerals, mining, extraction, supply, high-quality, sustainable, global, leader, solutions, premium, reliability, excellence, service, logo, CAPUT International (Pvt.) Ltd., event management, branding, advertising, facility management, vendor services, property advisors, oil and gas sector, construction"
+        />
+      </Helmet>
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Main Service Content without Card */}
         <div>

@@ -12,6 +12,7 @@ import Slider from "react-slick";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { Expand, Fullscreen, ZoomIn } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const billboards = [
   {
@@ -126,6 +127,20 @@ export default function Billboards() {
     currentGallery && currentSlide === currentGallery.images.length - 1;
   return (
     <div className="container mx-auto px-6 py-12">
+      <Helmet>
+        <title>
+          Billboards - CAPUT International (Pvt.) Ltd. | Global Leader in
+          Premium Solutions
+        </title>
+        <meta
+          name="description"
+          content="We are a leading company providing innovative solutions across various industries. Our commitment to excellence and customer satisfaction sets us apart."
+        />
+        <meta
+          name="keywords"
+          content="minerals, mining, extraction, supply, high-quality, sustainable, global, leader, solutions, premium, reliability, excellence, service, logo, CAPUT International (Pvt.) Ltd., event management, branding, advertising, facility management, vendor services, property advisors, oil and gas sector, construction"
+        />
+      </Helmet>
       <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
         Our Billboards
       </h1>

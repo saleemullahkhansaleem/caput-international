@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { FaPlay } from "react-icons/fa";
 import { ImSpinner8 } from "react-icons/im";
 
@@ -92,6 +93,20 @@ export default function VideoGallery() {
 
   return (
     <div className="flex flex-col items-center min-h-[70vh] py-10">
+      <Helmet>
+        <title>
+          Edge Mall Ceremony - CAPUT International (Pvt.) Ltd. | Global Leader
+          in Premium Solutions
+        </title>
+        <meta
+          name="description"
+          content="We are a leading company providing innovative solutions across various industries. Our commitment to excellence and customer satisfaction sets us apart."
+        />
+        <meta
+          name="keywords"
+          content="minerals, mining, extraction, supply, high-quality, sustainable, global, leader, solutions, premium, reliability, excellence, service, logo, CAPUT International (Pvt.) Ltd., event management, branding, advertising, facility management, vendor services, property advisors, oil and gas sector, construction"
+        />
+      </Helmet>
       <h1 className="text-4xl font-bold mb-12 text-center">
         Launching Ceremony of The Edge Mall, Faisalabad
       </h1>

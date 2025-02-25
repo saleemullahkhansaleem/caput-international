@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ChevronRight } from "lucide-react";
 import { services } from "./Home";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function AboutUs() {
   const [activeTab, setActiveTab] = useState("vision");
@@ -16,6 +17,19 @@ export default function AboutUs() {
 
   return (
     <div className="min-h-screen ">
+          <Helmet>
+            <title>
+              About - CAPUT International (Pvt.) Ltd. | Global Leader in Premium Solutions
+            </title>
+            <meta
+              name="description"
+              content="We are a leading company providing innovative solutions across various industries. Our commitment to excellence and customer satisfaction sets us apart."
+            />
+            <meta
+              name="keywords"
+              content="minerals, mining, extraction, supply, high-quality, sustainable, global, leader, solutions, premium, reliability, excellence, service, logo, CAPUT International (Pvt.) Ltd., event management, branding, advertising, facility management, vendor services, property advisors, oil and gas sector, construction"
+            />
+          </Helmet>
       <div className="container mx-auto px-4 py-16">
         <motion.h1
           className="text-4xl md:text-5xl font-bold mb-8 text-center"

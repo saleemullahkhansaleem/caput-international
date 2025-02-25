@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import api from "@/http/api";
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function ContactUs() {
   const [submitted, setSubmitted] = useState(false);
@@ -51,13 +52,30 @@ export default function ContactUs() {
 
   return (
     <section className="py-20">
+      <Helmet>
+        <title>
+          Contact - CAPUT International (Pvt.) Ltd. | Global Leader in Premium
+          Solutions
+        </title>
+        <meta
+          name="description"
+          content="We are a leading company providing innovative solutions across various industries. Our commitment to excellence and customer satisfaction sets us apart."
+        />
+        <meta
+          name="keywords"
+          content="minerals, mining, extraction, supply, high-quality, sustainable, global, leader, solutions, premium, reliability, excellence, service, logo, CAPUT International (Pvt.) Ltd., event management, branding, advertising, facility management, vendor services, property advisors, oil and gas sector, construction"
+        />
+      </Helmet>
       <div className="container mx-auto px-4">
         {/* Page Header */}
         <h2 className="text-5xl font-bold text-center mb-12">Get in Touch</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {contactData.map((item, index) => (
-            <Card key={index} className="text-center relative group bg-muted border-none shadow-none">
+            <Card
+              key={index}
+              className="text-center relative group bg-muted border-none shadow-none"
+            >
               {item.link && (
                 <a href={item.link} className="absolute inset-0"></a>
               )}

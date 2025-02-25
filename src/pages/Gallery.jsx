@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/dialog";
 import Slider from "react-slick";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Using FontAwesome icons for custom arrows
+import { Helmet } from "react-helmet-async";
 
 const galleryItems = [
   {
@@ -91,6 +92,20 @@ export default function Gallery() {
 
   return (
     <section className="py-12">
+      <Helmet>
+        <title>
+          Gallery - CAPUT International (Pvt.) Ltd. | Global Leader in Premium
+          Solutions
+        </title>
+        <meta
+          name="description"
+          content="We are a leading company providing innovative solutions across various industries. Our commitment to excellence and customer satisfaction sets us apart."
+        />
+        <meta
+          name="keywords"
+          content="minerals, mining, extraction, supply, high-quality, sustainable, global, leader, solutions, premium, reliability, excellence, service, logo, CAPUT International (Pvt.) Ltd., event management, branding, advertising, facility management, vendor services, property advisors, oil and gas sector, construction"
+        />
+      </Helmet>
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-bold text-center mb-12">Our Gallery</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">

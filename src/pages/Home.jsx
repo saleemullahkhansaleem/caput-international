@@ -1,10 +1,11 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { HighlightedEvent, LogoCarousel, VideoSection } from "@/components";
 import { Link } from "react-router-dom";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { Gallery } from ".";
+import { Helmet } from "react-helmet-async";
 
 export const services = [
   {
@@ -87,6 +88,19 @@ export const contactData = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Helmet>
+        <title>
+          CAPUT International (Pvt.) Ltd. | Global Leader in Premium Solutions
+        </title>
+        <meta
+          name="description"
+          content="We are a leading company providing innovative solutions across various industries. Our commitment to excellence and customer satisfaction sets us apart."
+        />
+        <meta
+          name="keywords"
+          content="minerals, mining, extraction, supply, high-quality, sustainable, global, leader, solutions, premium, reliability, excellence, service, logo, CAPUT International (Pvt.) Ltd., event management, branding, advertising, facility management, vendor services, property advisors, oil and gas sector, construction"
+        />
+      </Helmet>
       <VideoSection />
       <HighlightedEvent />
 
