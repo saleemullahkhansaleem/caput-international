@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Link, useParams } from "react-router-dom";
 import { Button } from "./ui/button";
-import { CorporateGifts } from ".";
+import { ClientsSection, CorporateGifts, ProductsSection } from ".";
 import { Helmet } from "react-helmet-async";
 
 export default function ServiceDetail() {
@@ -359,6 +359,8 @@ export default function ServiceDetail() {
       )}
 
       {serviceId === "vendor-services" && <CorporateGifts />}
+      {serviceId === "mines-minerals" && <ProductsSection />}
+      {serviceId === "mines-minerals" && <ClientsSection />}
     </section>
   ) : (
     <section className="container mx-auto py-16 px-6 lg:px-8 text-center">
