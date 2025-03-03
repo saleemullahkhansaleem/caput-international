@@ -15,6 +15,18 @@ const clients = [
   { name: "PMCHS", image: "/images/clients/logo5.webp" },
   { name: "SME Bank", image: "/images/clients/logo3.webp" },
   { name: "USA Embassy", image: "/images/clients/logo12.webp" },
+  {
+    name: "Master Tiles & Ceramic",
+    image: "/images/clients/master-tiles.webp",
+  },
+  {
+    name: "Frontier Ceramics",
+    image: "/images/clients/frontier-ceramics.webp",
+  },
+  {
+    name: "Time Ceramics",
+    image: "/images/clients/time-ceramics.webp",
+  },
 ];
 
 const LogoCarousel = () => {
