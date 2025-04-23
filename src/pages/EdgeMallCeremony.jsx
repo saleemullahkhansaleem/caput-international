@@ -19,7 +19,7 @@ const videos = [
   },
   {
     id: "2",
-    title: "Mr. Tasneem Sabri Welcoming the Guests",
+    title: "Mr. Tasleem Ahmed Sabri Welcoming the Guests",
     thumbnail: "/images/edge-mall/v2.webp",
     videoUrl: "https://www.youtube.com/embed/1qojKO7ohHA?si=zxCOonj71yEdxiaA",
   },
@@ -64,7 +64,7 @@ const videos = [
   },
   {
     id: "9",
-    title: "Performance of Nadeem Abbas Lunewala",
+    title: "Performance of Nadeem Abbas Lonay Wala",
     thumbnail: "/images/edge-mall/v9.webp",
     videoUrl: "https://www.youtube.com/embed/auA4EjIgpys?si=T1dkDxfarpbiKNrX",
   },

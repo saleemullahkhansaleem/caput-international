@@ -36,7 +36,7 @@ const mineProducts = [
 export default function ProductsSection() {
   return (
     <div className="py-10">
-      <h3 className="text-2xl font-semibold text-primary mb-6">Products</h3>
+      <h3 className="text-2xl font-semibold text-primary mb-6">Our Products</h3>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
         {mineProducts.map((product) => (
